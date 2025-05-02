@@ -17,11 +17,11 @@ const navLinks = [
   },
 ];
 
- const words = [
-  { text: "WEBSITES", imgPath: "/images/ideas.svg" },
-  { text: "FRONTEND", imgPath: "/images/ideas.svg" },
-  { text: "BACKEND", imgPath: "/images/concepts.svg" },
-  { text: "LLM", imgPath: "/images/designs.svg" },
+const words = [
+  { text: "EVERYTHING", imgPath: "/images/ideas.svg" },
+  { text: "ENGINEERING", imgPath: "/images/ideas.svg" },
+  { text: "WEBSITES", imgPath: "/images/concepts.svg" },
+  { text: "SEO", imgPath: "/images/designs.svg" },
   { text: "EMBEDDED", imgPath: "/images/code.svg" },
   { text: "BRANDING", imgPath: "/images/ideas.svg" },
   { text: "SMM", imgPath: "/images/concepts.svg" },
@@ -34,7 +34,7 @@ const counterItems = [
   { value: 5, suffix: "+", label: "Years of Experience" },
   { value: 200, suffix: "+", label: "Satisfied Clients" },
   { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 95, suffix: "%", label: "Client Retention Rate" },
 ];
 
 const logoIconsList = [

@@ -6,3 +6,5 @@ npm install gsap @gsap/react three @react-three/fiber @react-three/drei @react-t
 follow the steps in this link "https://tailwindcss.com/docs/installation/using-vite"
 npm i react-responsive
 'In your models directory run' npx gltfjsx file.glb
+npm install react-countup
+
