@@ -14,7 +14,8 @@ const Hero = () => {
               <header className='flex flex-col justify-center md:w-full w-screen md:px-20 px-5'>
                   <div className='flex flex-col gap-7'>
                       <div className='hero-text'>
-                          <h1> We do
+                          <h1 className="transition-all duration-500 md:text-[60px] text-[40px] font-bold">
+                              We do
                             <span className="slide">
                               <span className="wrapper">
                                   {words.map((word) => (
@@ -30,11 +31,13 @@ const Hero = () => {
                                   
                               </span>
                           </span> </h1>
-                          <hr className="mb-4 w-[650px]">
+                          <hr className="mb-4 w-[650px] transition-all duration-500">
                           </hr>
-                          <h1 className="mt-4 pointer-events-none"> Lets build your business</h1>
+                          <h1 className="mt-4 pointer-events-none">
+                              Lets build your business</h1>
                       </div>
-                      <p>Hello, my name is Areg, and I am the founder of Liner Inc.<br />
+                      <p className="transition-all duration-500">
+                          Hello, my name is Areg, and I am the founder of Liner Inc.<br />
                           I have assembled a talented team of engineers who are dedicated to <br/>
                           helping you enhance and grow your business
                       </p>
