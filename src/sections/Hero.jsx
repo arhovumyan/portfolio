@@ -34,7 +34,9 @@ const Hero = () => {
                           <hr className="mb-4 w-[650px] transition-all duration-500">
                           </hr>
                           <h1 className="mt-4 pointer-events-none">
-                              Lets build your business</h1>
+                              We are the Swiss army <br/>
+                              knife for your business
+                          </h1>
                       </div>
                       <p className="transition-all duration-500">
                           Hello, my name is Areg, and I am the founder of Liner Inc.<br />
