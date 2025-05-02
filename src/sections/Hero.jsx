@@ -1,5 +1,7 @@
 import React from 'react'
 import { words } from "../constants/index.js";
+import Button from '../components/Button.jsx';
+
 const Hero = () => {
   return (
       <section id="hero" className="relative overflow-hidden">
@@ -27,14 +29,25 @@ const Hero = () => {
                                   
                               </span>
                           </span> </h1>
-                          <hr class="mb-4">
-
+                          <hr className="mb-4 w-[650px]">
                           </hr>
                           <h1 className="mt-4 pointer-events-none"> Lets build your business</h1>
                       </div>
-                      
+                      <p>Hello, my name is Areg, and I am the founder of Liner Inc.<br />
+                          I have assembled a talented team of engineers who are dedicated to <br/>
+                          helping you enhance and grow your business
+                      </p>
+                      <Button className="md:w-80 md:h-16 w-60 h-12"
+                          id="button"
+                          text="See our works"
+                      />
                   </div>
               </header>
+              <figure>
+                  <div className='hero-3d-layout border-red-200 border-2'>
+                      
+                  </div>
+              </figure>
           </div>
     </section>
   )
