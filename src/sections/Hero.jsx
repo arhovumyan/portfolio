@@ -76,7 +76,7 @@ const Hero = () => {
                                   
                               </span>
                           </span> </h1>
-                          <hr className="opacity-0 mb-4 w-[400px] ml-50"/>
+                          <hr className="opacity-0 mb-4 w-[200] md:w-[400px] ml-33 md:ml-50"/>
                           <h1 className="hero-sub-title opacity-0 mt-4 pointer-events-none">
                               We are the Swiss army <br/>
                               knife for your business

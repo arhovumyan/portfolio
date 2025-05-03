@@ -24,8 +24,8 @@ const HeroExperience = () => {
       <HeroLights />
       
       <group
-        scale={isMobile ? 0.2 : [0.3,0.3,0.3]}
-        position={isMobile ? [0, -2.5, 0] : isTablet ? [0,-2.5,0] : [0,0,0]}
+        scale={isMobile ? 0.3 : [0.3,0.3,0.3]}
+        position={isMobile ? [-1, -2.5, 0] : isTablet ? [0,-2.5,0] : [0,0,0]}
         rotation={[0.3, -0.7, -0.6]}>
         <Knife/>
       </group>
