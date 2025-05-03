@@ -1,28 +1,16 @@
-const navLinks = [
-  {
-    name: "Work",
-    link: "#work",
-  },
-  {
-    name: "Experience",
-    link: "#experience",
-  },
-  {
-    name: "Skills",
-    link: "#skills",
-  },
-  {
-    name: "Testimonials",
-    link: "#testimonials",
-  },
+export const navLinks = [
+  { name: "Work",       link: "#work" },
+  { name: "Experience", link: "#experience" },
+  { name: "Skills",     link: "#skills" },
+  { name: "Testimonials", link: "#testimonials" },
 ];
 
 const words = [
   { text: "EVERYTHING", imgPath: "/images/ideas.svg" },
-  { text: "ENGINEERING", imgPath: "/images/ideas.svg" },
+  { text: "SOFTWARE", imgPath: "/images/ideas.svg" },
   { text: "WEBSITES", imgPath: "/images/concepts.svg" },
   { text: "SEO", imgPath: "/images/designs.svg" },
-  { text: "EMBEDDED", imgPath: "/images/code.svg" },
+  { text: "MARKETING", imgPath: "/images/code.svg" },
   { text: "BRANDING", imgPath: "/images/ideas.svg" },
   { text: "SMM", imgPath: "/images/concepts.svg" },
   { text: "DESIGN", imgPath: "/images/designs.svg" },
@@ -276,6 +264,5 @@ export {
   socialImgs,
   techStackIcons,
   techStackImgs,
-  navLinks,
-};
 
+};
