@@ -48,33 +48,34 @@ const ShowcaseSection = () => {
               <div className="showcaselayout">
                   {/*Left Side*/}
                   <div className="first-project-wrapper" ref={project1Ref}>
-                      <div className='image-wrapper'>
-                          <img src='/images/project1.png' alt='Ryde'/>
+                      <div className='image-wrapper flex flex-col items-center'>
+                          <img src='/images/interview.png' alt='Ryde'/>
                       </div>
-                      <div className='text-content'>
-                          <h2>
-                                Prepare for your future technical interviews
-                          </h2>
-                          <p className='text-white-50 md:text-xl'>
-                              An app built with Next.js, React, Tailwind, Typescript and more tools</p>
+                      <div className='text-content text-center'>
+                          <h2 className='text-white-50 md:text-2xl mb-10'>
+                              An interview app built with Next.js, React, Tailwind, Typescript and many more tools</h2>
                           <a href="https://interview-three-phi.vercel.app/"   className="linkingButton">
-                              Take an interview
+                              Take a look
                           </a>      
                       </div>
                   </div>
                   {/*Right Side*/}
-                  <div className='project-list-wrapper overflow-hidden'>
+                  <div className='project-list-wrapper overflow-hidden flex flex-col items-center'>
                       <div className='project' ref={project2Ref}>
-                          <div className="image-wrapper bg-[#1d1d1d]"> 
-                          <img src="/images/project2.png" alt='Subscription system'/>
+                          <div className="image-wrapper bg-[#black]"> 
+                          <img src="/images/sub2.png" alt='Subscription system'/>
                           </div>
-                          <h2> **WORK IN PROGRESS** </h2>
+                          <p className="flex flex-center text-2xl ">
+                              Subscription system
+                          </p>
+                          <h2 className="flex flex-center"> **WORK IN PROGRESS** </h2>
                       </div>
                       <div className='project' ref={project3Ref}>
-                          <div className="image-wrapper bg-[#1d1d1d]"> 
-                          <img src="/images/project2.png" alt='Subscription system'/>
+                          <div className="image-wrapper bg-[#black]"> 
+                          <img src="/images/assistant.png" alt='Subscription system'/>
                           </div>
-                          <h2> **WORK IN PROGRESS** </h2>
+                          <p className="flex flex-center text-2xl">AI chatbot/assistant</p>
+                          <h2 className="flex flex-center"> **WORK IN PROGRESS** </h2>
                       </div>
                       
                   </div>

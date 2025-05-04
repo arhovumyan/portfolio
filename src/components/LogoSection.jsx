@@ -20,7 +20,7 @@ const MovingIcons = () => {
 
 const LogoSection = () => {
   return (
-    <div className=" md:my-20 my-10 relative">
+    <div aria-hidden="true" className=" md:my-20 my-10 relative">
         <div className='gradient-edge' />    
         <div className='gradient-edge' />
 

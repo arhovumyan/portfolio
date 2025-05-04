@@ -407,6 +407,7 @@ section {
   position: relative;
 }
 .marquee-box {
+  
   display: flex;
   align-items: center;
   width: 1000%;
@@ -414,13 +415,19 @@ section {
   position: absolute;
   overflow: hidden;
   animation: marquee 10s linear infinite;
+  gap:0.1rem;
 }
 .marquee-item {
   float: left;
+  
 }
+.marquee:hover div{
+  animation-play-state: paused
+}
+
 @keyframes marquee {
   0% {
-    left: 0;
+    left: 0%;
   }
   100% {
     left: -100%;

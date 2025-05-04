@@ -21,7 +21,7 @@ const words = [
 const counterItems = [
   { value: 5, suffix: "+", label: "Years of Experience" },
   { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
+  { value: 148, suffix: "+", label: "Completed Projects" },
   { value: 95, suffix: "%", label: "Client Retention Rate" },
 ];
 
@@ -33,7 +33,7 @@ const logoIconsList = [
     imgPath: "/images/logos/type.png",
   },
   {
-    imgPath: "/images/logos/next.png",
+    imgPath: "/images/logos/next.svg",
   },
   {
     imgPath: "/images/logos/aws.png",
