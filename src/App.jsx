@@ -1,7 +1,8 @@
 import Hero from './sections/Hero.jsx'
 import ShowcaseSection from './sections/ShowcaseSection.jsx'
 import NavBar from './components/NavBar.jsx'
-import LogoSection from './components/LogoSection.jsx'
+import LogoSection from './sections/LogoSection.jsx'
+import FeatureCard from './sections/FeatureCard.jsx'
 
 const App = () => {
   return (
@@ -9,8 +10,8 @@ const App = () => {
       <NavBar />
       <Hero />
       <ShowcaseSection />
-      <LogoSection/>
-
+      <LogoSection />
+      <FeatureCard />
     </>
   )
 }
