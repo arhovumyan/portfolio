@@ -59,7 +59,7 @@ const Hero = () => {
               <header className='flex flex-col justify-center md:w-full w-screen md:px-20 px-5'>
                   <div className='flex flex-col gap-7'>
                       <div className='hero-text'>
-                          <h1 className="hero-main-title md:text-[60px] text-[40px] font-bold">
+                          <h1 className="hero-main-title text-[24px] md:text-[60px] font-bold">
                               We do
                             <span className="slide">
                               <span className="wrapper">
@@ -69,26 +69,18 @@ const Hero = () => {
                                             src={word.imgPath}
                                             alt={word.text}
                                               className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50" />
-                                          
                                           <span>{word.text}</span>
-                                          </span>
+                                      </span>
                                   ))}
-                                  
                               </span>
-                          </span> </h1>
-                          <hr className="opacity-0 mb-4 w-[200] md:w-[400px] ml-33 md:ml-50"/>
+                            </span>
+                          </h1>
+                          <hr className="opacity-0 mb-4 w-[200] md:w-[400px] ml-33 md:ml-50 md:block hidden"/>
                           <h1 className="hero-sub-title opacity-0 mt-4 pointer-events-none">
                               We are the Swiss army <br/>
                               knife for your business
                           </h1>
                       </div>
-                      {/*
-                      <p className="transition-all duration-500">
-                          Hello, my name is Areg, and I am the founder of Liner Inc.<br />
-                          I have assembled a talented team of engineers who are dedicated to <br/>
-                          helping you enhance and grow your business
-                      </p>
-                      */}
                       <Button className="work-button opacity-0 md:w-80 md:h-16 w-60 h-12"
                           id="button"
                           text="See our works"
