@@ -24,7 +24,7 @@ npm i react-responsive
 
 
 <pre>
-"**In your models directory**" npx gltfjsx file.glb
+npx gltfjsx file.glb
 </pre>
 
 <pre>
