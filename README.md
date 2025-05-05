@@ -15,19 +15,16 @@ npm install
 <pre>
 npm install gsap @gsap/react three @react-three/fiber @react-three/drei @react-three/postprocessing
 </pre>
-(Fiber is the React version of Three.js)
 
-<pre>
-Follow the steps in this link: https://tailwindcss.com/docs/installation/using-vite
-</pre>
+**Follow the steps in this link: https://tailwindcss.com/docs/installation/using-vite**
 
 <pre>
 npm i react-responsive
 </pre>
 
-**In your models directory**
+
 <pre>
-npx gltfjsx file.glb
+"**In your models directory**" npx gltfjsx file.glb
 </pre>
 
 <pre>
