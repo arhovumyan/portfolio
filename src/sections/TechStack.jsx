@@ -17,7 +17,7 @@ const TechStack = () => {
             {
                 y: 0,
                 opacity: 1,
-                duracrtion: 1,
+                duration: 1,
                 ease: 'power2.inOut',
                 stagger: 0.2,
                 scrollTrigger: {

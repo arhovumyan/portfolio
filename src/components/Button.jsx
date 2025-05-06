@@ -6,7 +6,7 @@ const Button = ({id, text, className}) => {
         <a
             onClick={(e) => {
                 e.preventDefault()
-                const target = document.getElementById('counter')
+                const target = document.getElementById(id)
 
                 if (target && id) {
                     const offset = window.innerHeight * 0.15
