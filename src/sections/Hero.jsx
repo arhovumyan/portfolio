@@ -42,6 +42,12 @@ const Hero = () => {
             ease: 'power2.inOut',
             delay: 2.5,
         })
+        gsap.to('.contact-button', {
+            autoAlpha: 1,
+            duration: 2,
+            ease: 'power2.inOut',
+            delay: 2.5,
+        })
         gsap.to('.hero-3d-layout', {
             autoAlpha: 1,
             duration: 2,
@@ -83,13 +89,13 @@ const Hero = () => {
                       </div>
                       <Button
               text="See My Work"
-              className="md:w-80 md:h-16 w-60 h-12"
+              className="work-button opacity-0 md:w-80 md:h-16 w-60 h-12"
               id="work"
             />
                   </div>
               </header>
               <figure>
-                <div className="hero-3d-layout opacity-0">
+                <div className=" hero-3d-layout opacity-0">
                     <HeroExperience/>
                 </div>
               </figure>

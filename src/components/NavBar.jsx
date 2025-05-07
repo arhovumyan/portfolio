@@ -1,12 +1,27 @@
 import { useEffect, useState } from 'react';
 import { navLinks } from '../constants/index.js'
+import { useGSAP } from "@gsap/react"
+import { gsap } from "gsap"
+
+
 
 const NavBar = () => {
+
     
     {/*handles navbar to not be invisible when scroleld down */ }
     
     const [scrolled, setScrolled] = useState(false);
-
+    
+    useGSAP(() => {
+    gsap.to(
+      '.navbar',
+        {
+            opacity: 1,
+            duration: 1,
+        } 
+    );
+    });
+    
     useEffect(() => {
         const handleScroll = () => {
             const isScrolled = window.scrollY > 10
@@ -19,7 +34,7 @@ const NavBar = () => {
     
     return (
       
-        <header className={ `navbar ${scrolled ? 'scrolled' :  'not-scrolled'}`}>
+        <header className={ `navbar ${scrolled ? 'scrolled' :  'not-scrolled'} opacity-0`}>
           <div className='inner'>
               <a className='logo' href="#hero">
                   LINER
