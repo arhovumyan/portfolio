@@ -6,6 +6,7 @@ import FeatureCard from './sections/FeatureCard.jsx'
 import ExperienceSection from './sections/ExperienceSection.jsx'
 import TechStack from './sections/TechStack.jsx'
 import Testimonials from './sections/Testimonials.jsx'
+import Contact from './sections/Contact.jsx'
 
 const App = () => {
   return (
@@ -17,7 +18,8 @@ const App = () => {
       <FeatureCard />
       <ExperienceSection />
       <TechStack />
-      <Testimonials/>
+      <Testimonials />
+      <Contact/>
     </>
   )
 }

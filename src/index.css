@@ -13,6 +13,8 @@ body {
   color: white;
   scroll-behavior: smooth;
   font-family: "Mona Sans", sans-serif;
+  overflow-x: hidden;
+
 }
 
 section {
@@ -483,7 +485,4 @@ section {
 
 .card:hover::before {
   opacity: 1;
-}
-html, body {
-  overflow-x: hidden;
 }
