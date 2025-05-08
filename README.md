@@ -1,4 +1,4 @@
-# Portfolio for Liner
+# Portfolio 
 
 ## This is a portfolio for showcasing my projects
 
