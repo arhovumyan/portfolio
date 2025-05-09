@@ -30,3 +30,7 @@ npx gltfjsx file.glb
 <pre>
 npm install react-countup
 </pre>
+
+<pre>
+npm i @emailjs/browser
+</pre>
