@@ -66,7 +66,7 @@ const Hero = () => {
                   <div className='flex flex-col gap-7'>
                       <div className='hero-text'>
                           <h1 className="hero-main-title text-[24px] md:text-[60px] font-bold">
-                              We do
+                              I do
                             <span className="slide">
                               <span className="wrapper">
                                   {words.map((word) => (
@@ -81,9 +81,9 @@ const Hero = () => {
                               </span>
                             </span>
                           </h1>
-                          <hr className="opacity-0 mb-4 w-[200] md:w-[400px] ml-33 md:ml-50 md:block hidden"/>
+                          <hr className="opacity-0 mb-4 w-[200] md:w-[440px] ml-33 md:ml-32 md:block hidden"/>
                           <h1 className="hero-sub-title opacity-0 mt-4 pointer-events-none">
-                              We are the Swiss army <br/>
+                              Just like a Swiss army <br/>
                               knife for your business
                           </h1>
                       </div>

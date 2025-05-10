@@ -37,7 +37,7 @@ const NavBar = () => {
         <header className={ `navbar ${scrolled ? 'scrolled' :  'not-scrolled'} opacity-0`}>
           <div className='inner'>
               <a className='logo' href="#hero">
-                  LINER
+                  Areg Hovumyan
               </a>      
               <nav className='desktop'>
                   <ul>
@@ -53,7 +53,7 @@ const NavBar = () => {
               </nav>
               <a href='#contact' className='contact-btn group'>
                   <div className='inner'>
-                      <span>Contact us</span>
+                      <span>Contact me</span>
                   </div>
               </a>
           </div>

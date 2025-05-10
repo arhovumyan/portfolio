@@ -62,7 +62,7 @@ const Contact = () => {
                     name="name"
                     value={form.name}
                     onChange={handleChange}
-                    placeholder="What’s your good name?"
+                    placeholder="What’s your name?"
                     required
                   />
                 </div>
@@ -87,7 +87,7 @@ const Contact = () => {
                     name="message"
                     value={form.message}
                     onChange={handleChange}
-                    placeholder="How can I help you?"
+                    placeholder="Message"
                     rows="5"
                     required
                   />
