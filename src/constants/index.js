@@ -263,6 +263,7 @@ const socialImgs = [
   {
     name: "github",
     imgPath: "/images/github.png",
+    url: "https://github.com/Arhovumyan"
   },
   /*{
     name: "fb",
@@ -275,6 +276,7 @@ const socialImgs = [
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    url: "https://www.linkedin.com/in/areg-hovumyan/"
   },
 ];
 

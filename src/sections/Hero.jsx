@@ -88,7 +88,7 @@ const Hero = () => {
                           </h1>
                       </div>
                       <Button
-              text="See My Work"
+              text="See My Works"
               className="work-button opacity-0 md:w-80 md:h-16 w-60 h-12"
               id="work"
             />
