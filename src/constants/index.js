@@ -7,13 +7,13 @@
 
 const words = [
   { text: "EVERYTHING", imgPath: "/images/ideas.svg" },
-  { text: "SOFTWARE", imgPath: "/images/ideas.svg" },
-  { text: "WEBSITES", imgPath: "/images/concepts.svg" },
-  { text: "SEO", imgPath: "/images/designs.svg" },
-  { text: "MARKETING", imgPath: "/images/code.svg" },
-  { text: "BRANDING", imgPath: "/images/ideas.svg" },
-  { text: "SMM", imgPath: "/images/concepts.svg" },
-  { text: "DESIGN", imgPath: "/images/designs.svg" },
+  { text: "BACKEND", imgPath: "/images/ideas.svg" },
+  { text: "FRONTEND", imgPath: "/images/concepts.svg" },
+  { text: "AI/ML", imgPath: "/images/designs.svg" },
+  { text: "SEO", imgPath: "/images/code.svg" },
+  { text: "DS/ALGORITHMS", imgPath: "/images/ideas.svg" },
+  { text: "DEVOPS", imgPath: "/images/concepts.svg" },
+  { text: "SMM", imgPath: "/images/designs.svg" },
   { text: "RESEARCH", imgPath: "/images/code.svg" },
 ];
 
