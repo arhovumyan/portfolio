@@ -16,7 +16,7 @@ npm install
 npm install gsap @gsap/react three @react-three/fiber @react-three/drei @react-three/postprocessing
 </pre>
 
-**Follow the steps in this link: https://tailwindcss.com/docs/installation/using-vite**
+**Follow the steps in this link to install tailwind v4 with vite: https://tailwindcss.com/docs/installation/using-vite**
 
 <pre>
 npm i react-responsive
