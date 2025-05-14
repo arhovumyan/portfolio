@@ -41,6 +41,9 @@ section {
 }
 
 @layer components {
+  {/*].centered-gif {
+    @apply fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[-1] opacity-30 blur-md;
+  }*/}
   .linkingButton {
     @apply  bg-white text-black py-3 px-6 rounded-lg shadow-lg hover:bg-blue-600 hover:scale-105 transition-all duration-300
   }
