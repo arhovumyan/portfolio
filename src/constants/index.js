@@ -7,14 +7,14 @@
 
 const words = [
   { text: "EVERYTHING", imgPath: "/images/ideas.svg" },
-  { text: "BACKEND", imgPath: "/images/ideas.svg" },
-  { text: "FRONTEND", imgPath: "/images/concepts.svg" },
-  { text: "AI/ML", imgPath: "/images/designs.svg" },
-  { text: "SEO", imgPath: "/images/code.svg" },
-  { text: "DS/ALGORITHMS", imgPath: "/images/ideas.svg" },
-  { text: "DEVOPS", imgPath: "/images/concepts.svg" },
-  { text: "SMM", imgPath: "/images/designs.svg" },
-  { text: "RESEARCH", imgPath: "/images/code.svg" },
+  { text: "BACKEND", imgPath: "/images/back.svg" },
+  { text: "FRONTEND", imgPath: "/images/front.svg" },
+  { text: "AI/ML", imgPath: "/images/ai.svg" },
+  { text: "SEO", imgPath: "/images/seo.svg" },
+  { text: "DS/ALGORITHMS", imgPath: "/images/algo.svg" },
+  { text: "DEVOPS", imgPath: "/images/devopss.svg" },
+  { text: "SMM", imgPath: "/images/smm.svg" },
+  { text: "RESEARCH", imgPath: "/images/research.svg" },
 ];
 
 
@@ -93,9 +93,9 @@ const abilities = [
     desc: "Delivering high-quality results while maintaining attention to every detail.",
   },
   {
-    imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    imgPath: "/images/book.png",
+    title: "Willingness to learn",
+    desc: "Always ready to learn new tools that are crucial for the business.",
   },
   {
     imgPath: "/images/time.png",
@@ -162,39 +162,42 @@ const techStackIcons = [
 
 const expCards = [
   {
+    creditor: 'Liner team',
     review: "As a team lead, Areg's brought creativity and technical expertise to the team, leadership and guidance to the team. He significantly improved our backend performance.",
     imgPath: "/images/liner (1).png",
     logoPath: "/images/liner_logo.png",
     title: "CEO, Software Engineer",
     date: "March 2025 - Present",
     responsibilities: [
-      "Built websites for various clients in Artists, Doctors, Engineers and many more.",
-      "Upped the business revenue by 200%.",
+      "Developed custom websites for a diverse range of clients, including artists, medical professionals, engineers, and others.",
+      "Increased overall business revenue by 200% through strategic project delivery and client acquisition. ",
       "Introduced new tools to the teach such as tailwindCSS, Three.js, GSAP, Express.",
     ],
   },
   {
-    review: "Areg's contributions to Schoolars web development has been really helpful. He approaches challenges with a problem-solving mindset. He is always ready to face whatever the new challenge/problem is.Lorep ipsumLorep ipsumLorep ipsumLorep ipsumLorep ipsumLorep ipsumLorep ipsumLorep ipsumLorep ipsumLorep ipsumLorep ipsumLorep ipsumLorep ipsumLorep ipsumLorep ipsum",
+    creditor: "Taron H.",
+    review: "Areg's contributions to Schoolars web development has been really helpful. He approaches challenges with a problem-solving mindset. He is always ready to face whatever the new challenge/problem is.",
     imgPath: "/images/schoolars.png",
     logoPath: "/images/schoolars_logo.png",
     title: "Backend Developer",
     date: "Nov 2023 - Mar 2025",
     responsibilities: [
-      "Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
-      "Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
-      "Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
+      "Built responsive, SEO-friendly web applications using modern frameworks like React, Next.js, and Express.js.",
+      "Led a team of 3 developers, managing task distribution, reviewing code, and ensuring project deadlines were met.",
+      "Trained junior developers on modern front-end practices including Tailwind CSS, component-based architecture, and version control.",
     ],
   },
   {
-    review: "Areg build the website, coded the smartcontracts and directly worked with the artists in order to create 500 unique NFT characters. Deployed them on openSea and and signlehandedly lead the team to success. He showed excellent leadership skills, as well as proved that he is a team player and is able to meat all the deadlines.",
-    imgPath: "/images/exp3.png",
+    creditor: "Minas K.",
+    review: "Areg built our website where customers could conntect their crypto wallets and accquire their NFTs. Areg coded the smartcontracts and directly worked with the artists in order to create 500 unique NFT characters. Deployed them on openSea and and signlehandedly lead the team to success. He showed excellent leadership skills, as well as proved that he is a team player and is able to meat all the deadlines.",
+    imgPath: "/images/cw.png",
     logoPath: "/images/crypto_warriors.png",
     title: "FullStack developer,  Smart contract developer",
     date: "Aug 2021 - Feb 2022",
     responsibilities: [
-      "Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
-      "Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
-      "Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.",
+      "Designed custom ERC-20 and ERC-721 tokens, including minting, burning, and royalty logic, for NFT and DAO-based platforms.",
+      "Audited smart contracts for vulnerabilities such as reentrancy, overflow/underflow, and front-running, ensuring secure DeFi protocol deployment.",
+      "Integrated wallet functionality (MetaMask, WalletConnect) and managed user authentication using cryptographic signatures.",
     ],
   },
 ];
