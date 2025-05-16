@@ -6,7 +6,7 @@ const Footer = () => {
       <div className='footer'>
           <div className='footer-container'>
               <div className='flex flex-col justify-center items-center'>
-                  <a href="/">See my resume</a>
+                  <a href="../public/Areg Hovumyan Resume.pdf" target="_blank" rel="noopener noreferrer">See my resume</a>
               </div>
               <div className='socials'>
                   {socialImgs.map((img) => (
