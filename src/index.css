@@ -247,7 +247,7 @@ section {
   }
 
  .timeline-wrapper {
-  @apply absolute top-0 xl:left-[35.5vw] md:left-10 left-5 h-full flex justify-center overflow-hidden;
+  @apply absolute top-0 xl:left-[35.5vw] md:left-10 left-5 h-full flex justify-center overflow-hidden z-1;
 }
 
   .timeline {
@@ -426,9 +426,6 @@ section {
 .marquee-item {
   float: left;
   
-}
-.marquee:hover div{
-  animation-play-state: paused
 }
 
 @keyframes marquee {

@@ -171,7 +171,7 @@ const expCards = [
     responsibilities: [
       "Developed custom websites for a diverse range of clients, including artists, medical professionals, engineers, and others.",
       "Increased overall business revenue by 200% through strategic project delivery and client acquisition. ",
-      "Introduced new tools to the teach such as tailwindCSS, Three.js, GSAP, Express.",
+      "Introduced new tools such as tailwindCSS, Three.js, GSAP, Express to the team.",
     ],
   },
   {

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
       <div className='footer'>
           <div className='footer-container'>
-              <div className='flex flex-col justify-center items-center'>
+              <div className='desktop flex flex-col justify-center items-center'>
                   <a href="/Areg Hovumyan Resume.pdf" target="_blank" rel="noopener noreferrer">See my resume</a>
               </div>
               <div className='socials'>
