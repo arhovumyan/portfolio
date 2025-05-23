@@ -8,10 +8,12 @@ import TechStack from './sections/TechStack.jsx'
 import Testimonials from './sections/Testimonials.jsx'
 import Contact from './sections/Contact.jsx'
 import Footer from './sections/Footer.jsx'
+import MisteryBlackBox from './components/MisteryBlackBox.jsx'
 
 const App = () => {
   return (
     <>
+      <MisteryBlackBox/>
       <NavBar />
       <Hero />
       <ShowcaseSection />
