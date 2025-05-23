@@ -3,9 +3,9 @@ import { socialImgs } from '../constants'
 
 const Footer = () => {
   return (
-      <div className='footer'>
+      <div className='logo footer'>
           <div className='footer-container'>
-              <div className='desktop flex flex-col justify-center items-center'>
+              <div className='footer-credentials desktop flex flex-col justify-center items-center'>
                   <a href="/Areg Hovumyan Resume.pdf" target="_blank" rel="noopener noreferrer">See my resume</a>
               </div>
               <div className='socials'>
@@ -15,7 +15,7 @@ const Footer = () => {
                       </a>
                   ))}
               </div>
-              <div className='flex flex-col justify-center'>
+              <div className='flex flex-col justify-center '>
                   <p className='text-center md:text-end'>
                       © {new Date().getFullYear()} Areg Hovumyan. All rights reserved.
                       

@@ -16,8 +16,9 @@ const NavBar = () => {
             '.navbar',
         {
             opacity: 1,
-            duration: 3,
+            duration: 2.3,
             ease: 'power2.inOut',
+            delay:2,
         } 
     );
     });
