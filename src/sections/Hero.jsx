@@ -18,6 +18,7 @@ const Hero = () => {
                 stagger: 0.2,
                 duration: 2,
                 ease: 'power2.inOut',
+                delay: 1,
             },
         )
         gsap.to('.hero-sub-title',
@@ -25,7 +26,7 @@ const Hero = () => {
                 autoAlpha: 1,
                 duration: 2,
                 ease: 'power2.inOut',
-                delay: 1.5,
+                delay: 2.5,
             }
         )
         gsap.to('.hero-text hr',
@@ -33,26 +34,26 @@ const Hero = () => {
                 autoAlpha: 1,
                 duration: 2,
                 ease: 'power2.inOut',
-                delay: 2,
+                delay: 3.5,
             }
         )
         gsap.to('.work-button', {
             autoAlpha: 1,
             duration: 2,
             ease: 'power2.inOut',
-            delay: 2.5,
+            delay: 3.8,
         })
         gsap.to('.contact-button', {
             autoAlpha: 1,
             duration: 2,
             ease: 'power2.inOut',
-            delay: 2.5,
+            delay: 3.8,
         })
         gsap.to('.hero-3d-layout', {
             autoAlpha: 1,
             duration: 2,
             ease: 'power2.inOut',
-            delay: 2.5,
+            delay: 2.76,
         })
     })
   return (

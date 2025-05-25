@@ -9,7 +9,7 @@ const MisteryBlackBox = () => {
     gsap.to(boxRef.current, {
       opacity: 0,
       duration: 3,
-      delay: 2,
+      delay: 2.4,
       ease: "power2.inOut",
       pointerEvents: "none",
     });
@@ -23,7 +23,7 @@ const MisteryBlackBox = () => {
         top: 0,
         left: 0,
         width: "100vw",
-        height: "120px", // Adjust to match your navbar height
+        height: "120px",
         background: "black",
         opacity: 1,
         zIndex: 9990,
