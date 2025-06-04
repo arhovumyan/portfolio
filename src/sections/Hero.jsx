@@ -84,8 +84,8 @@ const Hero = () => {
                           </h1>
                           <hr className="opacity-0 mb-4 w-[200] md:w-[440px] ml-33 md:ml-32 md:block hidden"/>
                           <h1 className="hero-sub-title opacity-0 mt-4 pointer-events-none">
-                              Your go-to resource <br/>
-                              for everything
+                              The firm foundation <br/>
+                              of your business.
                           </h1>
                       </div>
                       <Button
