@@ -166,7 +166,7 @@ const expCards = [
     review: "As a team lead, Areg's brought creativity and technical expertise to the team, leadership and guidance to the team. He significantly improved our backend performance.",
     imgPath: "/images/liner (1).png",
     logoPath: "/images/liner_logo.png",
-    title: "CEO, Software Engineer",
+    title: "Fullstack Developer",
     date: "March 2025 - Present",
     responsibilities: [
       "Developed custom websites for a diverse range of clients, including artists, medical professionals, engineers, and others.",
