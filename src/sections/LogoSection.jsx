@@ -9,6 +9,7 @@ const LogoIcon = ({ icon }) => {
         </div>
     )
 }
+
 const MovingIcons = () => {
     return (
     <>
@@ -26,8 +27,8 @@ const LogoSection = () => {
 
         <div className='marquee h-52'>
             <div className='marquee-box md:gap-1 gap-1'>
-                  <MovingIcons />
-                  <MovingIcons/>
+                  <MovingIcons key="first" />
+                  <MovingIcons key="second" />
             </div>
         </div>
     </div>

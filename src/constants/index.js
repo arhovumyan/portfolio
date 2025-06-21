@@ -175,7 +175,7 @@ const expCards = [
     ],
   },
   {
-    creditor: "Taron H.",
+    creditor: "Schoolars Team.",
     review: "Areg's contributions to Schoolars web development has been really helpful. He approaches challenges with a problem-solving mindset. He is always ready to face whatever the new challenge/problem is.",
     imgPath: "/images/schoolars.png",
     logoPath: "/images/schoolars_logo.png",

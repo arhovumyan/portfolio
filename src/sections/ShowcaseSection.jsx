@@ -66,9 +66,12 @@ const ShowcaseSection = () => {
                           <img src="/images/sub2.png" alt='Subscription system'/>
                           </div>
                           <p className="flex flex-center text-2xl ">
+                          <h2 className=' text-white-50 md:text-2xl mb-10'>
                               Subscription system
-                          </p>
-                          <h2 className="flex flex-center"> **WORK IN PROGRESS** </h2>
+                         
+                          AI Companion is a full-stack web application for creating and chatting with customizable AI characters in real-time conversations. The platform features character creation, image generation and subscription tiers.
+                              </h2>
+                              </p>
                       </div>
                       <div className='project' ref={project3Ref}>
                           <div className="image-wrapper bg-[#black]"> 
