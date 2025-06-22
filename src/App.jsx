@@ -9,6 +9,7 @@ import Testimonials from './sections/Testimonials.jsx'
 import Contact from './sections/Contact.jsx'
 import Footer from './sections/Footer.jsx'
 import MisteryBlackBox from './components/MisteryBlackBox.jsx'
+import ViewGithub from './sections/ViewGithub.jsx'
 
 const App = () => {
   return (
@@ -17,9 +18,10 @@ const App = () => {
       <NavBar />
       <Hero />
       <ShowcaseSection />
+      <ViewGithub/>
       <ExperienceSection />
       <LogoSection />
-      <FeatureCard />
+      {/* <FeatureCard /> */}
       <TechStack />
       {/*<Testimonials />*/}
       <Contact />
