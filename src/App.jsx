@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import Hero from './sections/Hero.jsx'
 import ShowcaseSection from './sections/ShowcaseSection.jsx'
 import NavBar from './components/NavBar.jsx'
@@ -10,22 +11,38 @@ import Contact from './sections/Contact.jsx'
 import Footer from './sections/Footer.jsx'
 import MisteryBlackBox from './components/MisteryBlackBox.jsx'
 import ViewGithub from './sections/ViewGithub.jsx'
+import LoadingScreen from './components/LoadingScreen.jsx';
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000); // 3 seconds
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
-      <MisteryBlackBox/>
-      <NavBar />
-      <Hero />
-      <ShowcaseSection />
-      <ViewGithub/>
-      <ExperienceSection />
-      <LogoSection />
-      {/* <FeatureCard /> */}
-      <TechStack />
-      {/*<Testimonials />*/}
-      <Contact />
-      <Footer/>
+      {loading ? (
+        <LoadingScreen />
+      ) : (
+        <>
+          <MisteryBlackBox/>
+          <NavBar />
+          <Hero />
+          <ShowcaseSection />
+          <ViewGithub/>
+          <ExperienceSection />
+          <LogoSection />
+          {/* <FeatureCard /> */}
+          <TechStack />
+          {/*<Testimonials />*/}
+          <Contact />
+          <Footer/>
+        </>
+      )}
     </>
   )
 }
