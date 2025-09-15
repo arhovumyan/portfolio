@@ -158,9 +158,9 @@ const ShowcaseSection = () => {
                               maxVisible={1}
                           />
                           <div className="project-button-container">
-                              <span className="project-status">**WORK IN PROGRESS**</span>
-                              <a href='#contact' className='project-button project-button-disabled'>
-                                  Coming Soon
+                              <span className="project-status">**Biggest Project so far**</span>
+                              <a href='https://medusa-vrfriendly.vercel.app/' className='project-button'>
+                                  Take a look
                               </a>
                           </div>
                       </div>
