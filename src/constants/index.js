@@ -7,14 +7,14 @@
 
 const words = [
   { text: "EVERYTHING", imgPath: "/images/ideas.svg" },
-  { text: "BACKEND", imgPath: "/images/back.svg" },
-  { text: "FRONTEND", imgPath: "/images/front.svg" },
+  { text: "ROBOTICS", imgPath: "/images/back.svg" },
+  { text: "EMBEDDED", imgPath: "/images/front.svg" },
   { text: "AI/ML", imgPath: "/images/ai.svg" },
-  { text: "SEO", imgPath: "/images/seo.svg" },
+  { text: "WEB", imgPath: "/images/seo.svg" },
   { text: "DS/ALGORITHMS", imgPath: "/images/algo.svg" },
   { text: "DEVOPS", imgPath: "/images/devopss.svg" },
-  { text: "SMM", imgPath: "/images/smm.svg" },
-  { text: "RESEARCH", imgPath: "/images/research.svg" },
+  { text: "ELECTRONICS", imgPath: "/images/smm.svg" },
+  { text: "FIRMWARE", imgPath: "/images/research.svg" },
 ];
 
 
@@ -162,12 +162,39 @@ const techStackIcons = [
 
 const expCards = [
   {
+    creditor: "Northrop Grumman Collaboration Project (UGV Ground Control)",
+    review: "Areg built core UGV ground control software, delivering low-latency command and telemetry pipelines with strong reliability across communication, sensing, and control layers.",
+    imgPath: "/images/exp2.png",
+    logoPath: "/images/ng.jpeg",
+    title: "Robotics Integration and Software Engineer",
+    date: "Jan 2026 - Present",
+    responsibilities: [
+      "Developed a Python-based ground station enabling bidirectional wireless communication over XBee radios.",
+      "Engineered a custom ROS-to-GCS Python bridge integrated with xsens_ros_mti_driver, packing IMU/GPS telemetry into 72-byte binary structures.",
+      "Implemented a low-latency (15-50 ms) command pipeline with multi-threaded packet queuing to reliably encode controller state changes for motors, steering, and payloads.",
+    ],
+  },
+  {
+    creditor: "Lockheed Martin / SUAS International Drone Competition",
+    review: "Areg presented architecture proposals, risk mitigation, and schedule strategy during PDR reviews with Lockheed Martin engineers while leading software execution for the robotics team.",
+    imgPath: "/images/exp1.png",
+    logoPath: "/images/lm.png",
+    title: "Machine Learning and Robotics Integration Team Lead",
+    date: "May 2025 - Present",
+    responsibilities: [
+      "Presented architecture proposals, risk and schedule plans during Preliminary Design Review sessions with Lockheed Martin engineers.",
+      "Developed ROS2 Python nodes to stream live drone camera data over MAVLink/UDP and run object detection with lifecycle nodes and asyncio at 30 Hz throughput.",
+      "Engineered a YOLOv11 object recognition pipeline, improving detection speed by 300% via TensorRT FP16 and increasing accuracy by over 400% on Jetson Orin Nano.",
+      "Built a production-ready detection pipeline with ONNX engine caching and achieved 85% node-level test coverage using pytest and ROS2 launch testing.",
+    ],
+  },
+  {
     creditor: 'Liner team',
     review: "As a team lead, Areg's brought creativity and technical expertise to the team, leadership and guidance to the team. He significantly improved our backend performance.",
     imgPath: "/images/liner (1).png",
     logoPath: "/images/liner_logo.png",
     title: "Fullstack Developer",
-    date: "March 2025 - Present",
+    date: "March 2025 - September 2025",
     responsibilities: [
       "Developed custom websites for a diverse range of clients, including artists, medical professionals, engineers, and others.",
       "Increased overall business revenue by 200% through strategic project delivery and client acquisition. ",
