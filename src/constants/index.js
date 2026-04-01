@@ -162,7 +162,7 @@ const techStackIcons = [
 
 const expCards = [
   {
-    creditor: "Northrop Grumman Collaboration Project (UGV Ground Control)",
+    creditor: "A Northrop Grumman Collaboration Project (UGV Ground Control)",
     review: "Areg built core UGV ground control software, delivering low-latency command and telemetry pipelines with strong reliability across communication, sensing, and control layers.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/ng.jpeg",
@@ -175,7 +175,7 @@ const expCards = [
     ],
   },
   {
-    creditor: "Lockheed Martin / SUAS International Drone Competition",
+    creditor: "A project sponsored by Lockheed Martin / SUAS International Drone Competition",
     review: "Areg presented architecture proposals, risk mitigation, and schedule strategy during PDR reviews with Lockheed Martin engineers while leading software execution for the robotics team.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/lm.png",
