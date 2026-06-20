@@ -109,7 +109,7 @@ const ShowcaseSection = () => {
                   {/* Project 1 - Interview App */}
                   <div className="project-card" ref={project1Ref}>
                       <div className='project-image-wrapper'>
-                          <img src='/images/interview.png' alt='Interview App' className="project-image"/>
+                          <img src='/images/interview.png' alt='Interview App' className="project-image" loading="lazy" decoding="async"/>
                       </div>
                       <div className='project-content'>
                           <h3 className='project-title'>
@@ -128,7 +128,7 @@ const ShowcaseSection = () => {
                   {/* Project 2 - WebSocket Chat */}
                   <div className='project-card' ref={project2Ref}>
                       <div className="project-image-wrapper"> 
-                          <img src="/images/websockets.png" alt='WebSocket Chat' className="project-image"/>
+                          <img src="/images/websockets.png" alt='WebSocket Chat' className="project-image" loading="lazy" decoding="async"/>
                       </div>
                       <div className='project-content'>
                           <h3 className='project-title'>
@@ -147,7 +147,7 @@ const ShowcaseSection = () => {
                   {/* Project 3 - AI Assistant */}
                   <div className='project-card' ref={project3Ref}>
                       <div className="project-image-wrapper"> 
-                          <img src="/images/aiCompanion.png" alt='AI Assistant' className="project-image"/>
+                          <img src="/images/aiCompanion.png" alt='AI Assistant' className="project-image" loading="lazy" decoding="async"/>
                       </div>
                       <div className='project-content'>
                           <h3 className='project-title'>
@@ -158,7 +158,7 @@ const ShowcaseSection = () => {
                               maxVisible={1}
                           />
                           <div className="project-button-container">
-                              <span className="project-status">**Biggest Project so far**</span>
+                              <span className="project-status">Biggest Project so far</span>
                               <a href='https://medusa-vrfriendly.vercel.app/' className='project-button'>
                                   Take a look
                               </a>

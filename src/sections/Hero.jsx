@@ -1,6 +1,9 @@
+import { Suspense, lazy } from "react";
 import { words } from "../constants/index.js";
 import Button from '../components/Button.jsx';
-import HeroExperience from '../components/HeroModels/HeroExperience.jsx';
+// Heavy three.js scene is code-split so the hero text paints without waiting
+// for the 3D bundle/model to download.
+const HeroExperience = lazy(() => import('../components/HeroModels/HeroExperience.jsx'));
 import { useGSAP } from "@gsap/react";
 import gsap from 'gsap'
 import AnimatedCounter from "../components/AnimatedCounter.jsx";
@@ -97,7 +100,9 @@ const Hero = () => {
               </header>
               <figure>
                 <div className=" hero-3d-layout opacity-0">
-                    <HeroExperience/>
+                    <Suspense fallback={null}>
+                        <HeroExperience/>
+                    </Suspense>
                 </div>
               </figure>
           </div>

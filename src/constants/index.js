@@ -94,7 +94,7 @@ const abilities = [
   },
   {
     imgPath: "/images/book.png",
-    title: "Willingness to learn",
+    title: "Willingness to Learn",
     desc: "Always ready to learn new tools that are crucial for the business.",
   },
   {
@@ -190,7 +190,7 @@ const expCards = [
   },
   {
     creditor: 'Liner team',
-    review: "As a team lead, Areg's brought creativity and technical expertise to the team, leadership and guidance to the team. He significantly improved our backend performance.",
+    review: "As a team lead, Areg brought creativity, technical expertise, leadership, and guidance to the team. He significantly improved our backend performance.",
     imgPath: "/images/liner (1).png",
     logoPath: "/images/liner_logo.png",
     title: "Fullstack Developer",
@@ -202,8 +202,8 @@ const expCards = [
     ],
   },
   {
-    creditor: "Schoolars Team.",
-    review: "Areg's contributions to Schoolars web development has been really helpful. He approaches challenges with a problem-solving mindset. He is always ready to face whatever the new challenge/problem is.",
+    creditor: "Schoolars Team",
+    review: "Areg's contributions to Schoolars' web development have been really helpful. He approaches challenges with a problem-solving mindset and is always ready to face whatever new challenge or problem comes his way.",
     imgPath: "/images/schoolars.png",
     logoPath: "/images/schoolars_logo.png",
     title: "Backend Developer",
@@ -216,10 +216,10 @@ const expCards = [
   },
   {
     creditor: "Minas K.",
-    review: "Areg built our website where customers could conntect their crypto wallets and accquire their NFTs. Areg coded the smartcontracts and directly worked with the artists in order to create 500 unique NFT characters. Deployed them on openSea and and signlehandedly lead the team to success. He showed excellent leadership skills, as well as proved that he is a team player and is able to meat all the deadlines.",
+    review: "Areg built our website where customers could connect their crypto wallets and acquire their NFTs. He coded the smart contracts and worked directly with the artists to create 500 unique NFT characters. He deployed them on OpenSea and single-handedly led the team to success. He showed excellent leadership skills and proved that he is a team player who is able to meet all deadlines.",
     imgPath: "/images/cw.png",
     logoPath: "/images/crypto_warriors.png",
-    title: "FullStack developer,  Smart contract developer",
+    title: "Full-Stack Developer, Smart Contract Developer",
     date: "Aug 2021 - Feb 2022",
     responsibilities: [
       "Designed custom ERC-20 and ERC-721 tokens, including minting, burning, and royalty logic, for NFT and DAO-based platforms.",

@@ -2,10 +2,21 @@ import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 
 import Computer from "./Computer";
+import { useInView } from "../../../hooks/useInView.js";
 
 const ContactExperience = () => {
+  // No continuous animation here, so render only on interaction ("demand")
+  // while visible, and stop entirely once scrolled out of view.
+  const [containerRef, inView] = useInView({ rootMargin: "200px" });
+
   return (
-    <Canvas shadows camera={{ position: [0, 3, 7], fov: 45 }}>
+    <div ref={containerRef} style={{ width: "100%", height: "100%" }}>
+      <Canvas
+        shadows
+        camera={{ position: [0, 3, 7], fov: 45 }}
+        dpr={[1, 1.5]}
+        frameloop={inView ? "demand" : "never"}
+      >
       <ambientLight intensity={0.5} color="#fff4e6" />
 
       <directionalLight position={[5, 5, 3]} intensity={2.5} color="#ffd9b3" />
@@ -37,7 +48,8 @@ const ContactExperience = () => {
       <group scale={0.03} position={[0, -1.49, -2]} castShadow>
         <Computer />
       </group>
-    </Canvas>
+      </Canvas>
+    </div>
   );
 };
 
