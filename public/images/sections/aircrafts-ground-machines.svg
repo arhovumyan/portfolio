@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" width="480" height="270" role="img" aria-label="Quadcopter and ground rover">
+  <rect width="480" height="270" fill="#0d0d0f"/>
+  <g stroke="#1c1c21" stroke-width="1">
+    <path d="M0 45h480M0 90h480M0 135h480M0 180h480M0 225h480"/>
+    <path d="M60 0v270M120 0v270M180 0v270M240 0v270M300 0v270M360 0v270M420 0v270"/>
+  </g>
+
+  <!-- quadcopter -->
+  <g fill="none" stroke="#d9ecff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M132 72l38 26M310 72l-38 26"/>
+    <path d="M132 122l38-24M310 122l-38-24"/>
+    <rect x="186" y="86" width="70" height="34" rx="10"/>
+  </g>
+  <g fill="none" stroke="#839cb5" stroke-width="2" stroke-linecap="round">
+    <ellipse cx="132" cy="72" rx="26" ry="6"/>
+    <ellipse cx="310" cy="72" rx="26" ry="6"/>
+    <ellipse cx="132" cy="122" rx="26" ry="6"/>
+    <ellipse cx="310" cy="122" rx="26" ry="6"/>
+    <circle cx="221" cy="103" r="9"/>
+    <path d="M196 120l-8 18M246 120l8 18"/>
+    <path d="M176 138h28M238 138h28"/>
+  </g>
+
+  <!-- ground rover -->
+  <g fill="none" stroke="#d9ecff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M156 214h136l-14-30h-42l-12-18h-46z"/>
+  </g>
+  <g fill="none" stroke="#839cb5" stroke-width="2">
+    <circle cx="184" cy="222" r="16"/>
+    <circle cx="240" cy="222" r="16"/>
+    <circle cx="296" cy="222" r="16"/>
+    <circle cx="184" cy="222" r="5"/>
+    <circle cx="240" cy="222" r="5"/>
+    <circle cx="296" cy="222" r="5"/>
+    <path d="M292 184v-16h20"/>
+  </g>
+
+  <!-- telemetry -->
+  <g fill="none" stroke="#839cb5" stroke-width="2" stroke-linecap="round" opacity="0.6">
+    <path d="M366 96a34 34 0 0 1 0 48M386 84a54 54 0 0 1 0 72M406 72a74 74 0 0 1 0 96"/>
+    <path d="M40 168h34l14-22 16 40 12-18h26"/>
+  </g>
+  <circle cx="348" cy="120" r="5" fill="#d9ecff"/>
+</svg>

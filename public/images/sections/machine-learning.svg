@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" width="480" height="270" role="img" aria-label="Neural network">
+  <rect width="480" height="270" fill="#0d0d0f"/>
+  <g stroke="#1c1c21" stroke-width="1">
+    <path d="M0 45h480M0 90h480M0 135h480M0 180h480M0 225h480"/>
+    <path d="M60 0v270M120 0v270M180 0v270M240 0v270M300 0v270M360 0v270M420 0v270"/>
+  </g>
+  <g stroke="#839cb5" stroke-width="1.5" opacity="0.55">
+    <path d="M108 90L204 70M108 90L204 135M108 90L204 200M108 180L204 70M108 180L204 135M108 180L204 200"/>
+    <path d="M204 70L300 100M204 70L300 170M204 135L300 100M204 135L300 170M204 200L300 100M204 200L300 170"/>
+    <path d="M300 100L392 135M300 170L392 135"/>
+  </g>
+  <g stroke="#d9ecff" stroke-width="2" opacity="0.95">
+    <path d="M108 90L204 135M204 135L300 170M300 170L392 135"/>
+  </g>
+  <g fill="#0d0d0f" stroke="#839cb5" stroke-width="2.5">
+    <circle cx="108" cy="90" r="13"/>
+    <circle cx="108" cy="180" r="13"/>
+    <circle cx="204" cy="70" r="13"/>
+    <circle cx="204" cy="135" r="13"/>
+    <circle cx="204" cy="200" r="13"/>
+    <circle cx="300" cy="100" r="13"/>
+    <circle cx="300" cy="170" r="13"/>
+  </g>
+  <circle cx="392" cy="135" r="16" fill="#0d0d0f" stroke="#d9ecff" stroke-width="2.5"/>
+  <g fill="#d9ecff">
+    <circle cx="204" cy="135" r="4.5"/>
+    <circle cx="300" cy="170" r="4.5"/>
+    <circle cx="392" cy="135" r="5"/>
+  </g>
+  <g fill="none" stroke="#839cb5" stroke-width="2" stroke-linecap="round" opacity="0.6">
+    <path d="M40 226h44l18-26 16 34 14-20h28"/>
+  </g>
+</svg>

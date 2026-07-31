@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 160" width="480" height="160" role="img" aria-label="Robotic lunar rover mission">
+  <g fill="#839cb5" opacity="0.55">
+    <circle cx="42" cy="26" r="1.6"/>
+    <circle cx="96" cy="14" r="1.2"/>
+    <circle cx="150" cy="32" r="1.6"/>
+    <circle cx="286" cy="18" r="1.2"/>
+    <circle cx="338" cy="38" r="1.6"/>
+    <circle cx="404" cy="22" r="1.2"/>
+  </g>
+
+  <!-- Earth, with the uplink arcs -->
+  <g fill="none" stroke="#839cb5" stroke-width="1.8">
+    <circle cx="410" cy="44" r="16"/>
+    <path d="M394 44h32M410 28c6 6 6 26 0 32M410 28c-6 6-6 26 0 32"/>
+  </g>
+  <g fill="none" stroke="#4cc0f0" stroke-width="1.8" stroke-linecap="round" opacity="0.75">
+    <path d="M368 60a44 44 0 0 0-14-16M356 74a64 64 0 0 0-20-24M344 88a84 84 0 0 0-26-32"/>
+  </g>
+
+  <!-- lunar surface -->
+  <g fill="none" stroke="#839cb5" stroke-width="2" stroke-linecap="round">
+    <path d="M8 134h464"/>
+    <path d="M60 134a14 8 0 0 1 28 0M330 134a18 9 0 0 1 36 0"/>
+  </g>
+
+  <!-- rover -->
+  <g fill="none" stroke="#d9ecff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M150 116h96l-10-26h-30l-9-14h-34z"/>
+    <path d="M214 90V64h22"/>
+    <path d="M236 64l-9-6M236 64l-9 7"/>
+  </g>
+  <g fill="none" stroke="#839cb5" stroke-width="2">
+    <circle cx="170" cy="124" r="11"/>
+    <circle cx="200" cy="124" r="11"/>
+    <circle cx="230" cy="124" r="11"/>
+    <circle cx="170" cy="124" r="3.5"/>
+    <circle cx="200" cy="124" r="3.5"/>
+    <circle cx="230" cy="124" r="3.5"/>
+    <rect x="163" y="96" width="26" height="12" rx="2"/>
+  </g>
+
+  <!-- camera / computer-vision frame over a shadowed crater -->
+  <g fill="none" stroke="#a259ff" stroke-width="2" stroke-linecap="round" opacity="0.9">
+    <path d="M74 100h-14v14M104 100h14v14M74 128h-14v-6M104 128h14v-6"/>
+  </g>
+  <g fill="none" stroke="#839cb5" stroke-width="1.8" opacity="0.8">
+    <ellipse cx="89" cy="122" rx="20" ry="8"/>
+  </g>
+</svg>

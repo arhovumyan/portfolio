@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 160" width="480" height="160" role="img" aria-label="Autonomous vehicle lab — interceptor drone and steering controller">
+  <!-- interceptor drone with a detection box -->
+  <g fill="none" stroke="#d9ecff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M52 48l30 20M158 48l-30 20M52 96l30-18M158 96l-30-18"/>
+    <rect x="92" y="60" width="26" height="24" rx="7"/>
+  </g>
+  <g fill="none" stroke="#839cb5" stroke-width="2" stroke-linecap="round">
+    <ellipse cx="52" cy="48" rx="20" ry="5"/>
+    <ellipse cx="158" cy="48" rx="20" ry="5"/>
+    <ellipse cx="52" cy="96" rx="20" ry="5"/>
+    <ellipse cx="158" cy="96" rx="20" ry="5"/>
+    <circle cx="105" cy="72" r="6"/>
+  </g>
+  <g fill="none" stroke="#a259ff" stroke-width="2" stroke-linecap="round">
+    <path d="M74 112h-10v-10M136 112h10v-10M74 136h-10v10M136 136h10v10"/>
+  </g>
+  <g fill="none" stroke="#839cb5" stroke-width="1.8" opacity="0.8">
+    <circle cx="105" cy="124" r="9"/>
+    <path d="M105 108v-8M105 148v-8M89 124h-8M129 124h-8"/>
+  </g>
+
+  <!-- CAN bus between the two -->
+  <g fill="none" stroke="#4cc0f0" stroke-width="2" stroke-linecap="round" opacity="0.8">
+    <path d="M196 80h26l8-12 10 24 9-12h27"/>
+  </g>
+  <g fill="#4cc0f0" opacity="0.9">
+    <circle cx="192" cy="80" r="3.5"/>
+    <circle cx="280" cy="80" r="3.5"/>
+  </g>
+
+  <!-- closed-loop steering wheel -->
+  <g fill="none" stroke="#d9ecff" stroke-width="2.5">
+    <circle cx="356" cy="80" r="46"/>
+    <circle cx="356" cy="80" r="15"/>
+  </g>
+  <g fill="none" stroke="#839cb5" stroke-width="2.5" stroke-linecap="round">
+    <path d="M356 65V38M343 91l-24 20M369 91l24 20"/>
+  </g>
+  <g fill="none" stroke="#a259ff" stroke-width="2" stroke-linecap="round">
+    <path d="M410 46a56 56 0 0 1 0 68"/>
+    <polyline points="404 108 411 115 418 109"/>
+  </g>
+
+  <!-- stepper / driver board -->
+  <g fill="none" stroke="#839cb5" stroke-width="2" stroke-linejoin="round" opacity="0.8">
+    <rect x="440" y="60" width="30" height="40" rx="4"/>
+    <path d="M440 70h-8M440 80h-8M440 90h-8M470 70h6M470 80h6M470 90h6"/>
+  </g>
+</svg>

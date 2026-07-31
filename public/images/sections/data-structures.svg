@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" width="480" height="270" role="img" aria-label="Binary tree and linked list">
+  <rect width="480" height="270" fill="#0d0d0f"/>
+  <g stroke="#1c1c21" stroke-width="1">
+    <path d="M0 45h480M0 90h480M0 135h480M0 180h480M0 225h480"/>
+    <path d="M60 0v270M120 0v270M180 0v270M240 0v270M300 0v270M360 0v270M420 0v270"/>
+  </g>
+
+  <!-- binary tree -->
+  <g stroke="#839cb5" stroke-width="2">
+    <path d="M170 68l-54 44M170 68l54 44M116 126l-32 40M116 126l32 40M224 126l32 40"/>
+  </g>
+  <g fill="#0d0d0f" stroke="#d9ecff" stroke-width="2.5">
+    <circle cx="170" cy="56" r="16"/>
+    <circle cx="116" cy="114" r="16"/>
+    <circle cx="224" cy="114" r="16"/>
+  </g>
+  <g fill="#0d0d0f" stroke="#839cb5" stroke-width="2.5">
+    <circle cx="84" cy="178" r="14"/>
+    <circle cx="148" cy="178" r="14"/>
+    <circle cx="256" cy="178" r="14"/>
+  </g>
+
+  <!-- linked list / array -->
+  <g fill="none" stroke="#839cb5" stroke-width="2.5">
+    <rect x="312" y="56" width="46" height="40" rx="6"/>
+    <rect x="312" y="112" width="46" height="40" rx="6"/>
+    <rect x="312" y="168" width="46" height="40" rx="6"/>
+  </g>
+  <g fill="none" stroke="#d9ecff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M358 76h34v36h-16M358 132h34v36h-16"/>
+    <path d="M382 106l-6 6 6 6M382 162l-6 6 6 6"/>
+  </g>
+  <g fill="#839cb5" opacity="0.9">
+    <circle cx="335" cy="76" r="4"/>
+    <circle cx="335" cy="132" r="4"/>
+    <circle cx="335" cy="188" r="4"/>
+  </g>
+  <g fill="none" stroke="#839cb5" stroke-width="2" stroke-linecap="round" opacity="0.55">
+    <path d="M64 226h48M132 226h34M186 226h60M264 226h28"/>
+  </g>
+</svg>

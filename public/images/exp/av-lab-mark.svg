@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#d9ecff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Autonomous vehicle lab">
+  <circle cx="24" cy="24" r="15"/>
+  <circle cx="24" cy="24" r="5"/>
+  <path d="M24 19v-10M20 28l-8 7M28 28l8 7" stroke="#839cb5"/>
+  <path d="M9 12h-4v-4M39 12h4v-4M9 36h-4v4M39 36h4v4" stroke="#a259ff"/>
+</svg>

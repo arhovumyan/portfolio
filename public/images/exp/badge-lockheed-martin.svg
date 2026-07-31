@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="Lockheed Martin">
+  <circle cx="24" cy="24" r="24" fill="#0a1a2f"/>
+  <path d="M8 34C18 34 30 30 42 20" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round"/>
+  <polygon fill="#ffffff" points="25,9 27.47,15.6 34.51,15.91 28.99,20.3 30.88,27.09 25,23.2 19.12,27.09 21.01,20.3 15.49,15.91 22.53,15.6"/>
+</svg>

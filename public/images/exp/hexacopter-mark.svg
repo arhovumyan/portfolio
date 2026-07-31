@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#d9ecff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Autonomous hexacopter">
+  <path d="M24 24L37 24M24 24L30.5 35.3M24 24L17.5 35.3M24 24L11 24M24 24L17.5 12.7M24 24L30.5 12.7"/>
+  <path d="M29 24l-2.5 4.3h-5L19 24l2.5-4.3h5z"/>
+  <g stroke="#839cb5" stroke-width="1.6">
+    <circle cx="37" cy="24" r="5"/>
+    <circle cx="30.5" cy="35.3" r="5"/>
+    <circle cx="17.5" cy="35.3" r="5"/>
+    <circle cx="11" cy="24" r="5"/>
+    <circle cx="17.5" cy="12.7" r="5"/>
+    <circle cx="30.5" cy="12.7" r="5"/>
+  </g>
+  <circle cx="24" cy="24" r="2.2" stroke="#a259ff" stroke-width="1.8"/>
+</svg>

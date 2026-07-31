@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" width="480" height="270" role="img" aria-label="Mobile and desktop apps">
+  <rect width="480" height="270" fill="#0d0d0f"/>
+  <g stroke="#1c1c21" stroke-width="1">
+    <path d="M0 45h480M0 90h480M0 135h480M0 180h480M0 225h480"/>
+    <path d="M60 0v270M120 0v270M180 0v270M240 0v270M300 0v270M360 0v270M420 0v270"/>
+  </g>
+
+  <!-- phone -->
+  <g fill="none" stroke="#d9ecff" stroke-width="2.5" stroke-linejoin="round">
+    <rect x="168" y="42" width="118" height="192" rx="18"/>
+    <path d="M168 74h118M168 206h118"/>
+  </g>
+  <g fill="none" stroke="#839cb5" stroke-width="2" stroke-linecap="round">
+    <path d="M206 58h42"/>
+    <rect x="188" y="90" width="34" height="34" rx="8"/>
+    <rect x="232" y="90" width="34" height="34" rx="8"/>
+    <rect x="188" y="134" width="34" height="34" rx="8"/>
+    <rect x="232" y="134" width="34" height="34" rx="8"/>
+    <path d="M196 182h62"/>
+    <circle cx="227" cy="220" r="7"/>
+  </g>
+  <g fill="none" stroke="#d9ecff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M198 107h14M205 100v14"/>
+    <path d="M242 100l14 14M256 100l-14 14"/>
+    <circle cx="205" cy="151" r="7"/>
+    <path d="M242 158l7-10 7 10z"/>
+  </g>
+
+  <!-- desktop window -->
+  <g fill="none" stroke="#839cb5" stroke-width="2" stroke-linejoin="round">
+    <rect x="310" y="80" width="126" height="88" rx="8"/>
+    <path d="M310 100h126M352 168v18M394 168v18M338 186h70"/>
+  </g>
+  <g fill="#839cb5" opacity="0.9">
+    <circle cx="322" cy="90" r="3"/>
+    <circle cx="332" cy="90" r="3"/>
+    <circle cx="342" cy="90" r="3"/>
+  </g>
+  <g fill="none" stroke="#d9ecff" stroke-width="2" stroke-linecap="round">
+    <path d="M324 116h46M324 130h64M324 144h34"/>
+  </g>
+
+  <!-- small tablet -->
+  <g fill="none" stroke="#839cb5" stroke-width="2" stroke-linejoin="round" opacity="0.7">
+    <rect x="44" y="96" width="80" height="112" rx="10"/>
+    <path d="M60 120h48M60 136h34M60 152h48M60 168h26"/>
+  </g>
+</svg>

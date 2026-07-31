@@ -7,18 +7,21 @@
 
 html,
 body {
-  width: 100dvw;
+  /* 100% instead of 100dvw: dvw includes the scrollbar, which pushed content
+     past the right edge of the window. */
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
   background-color: black;
   color: white;
   scroll-behavior: smooth;
   font-family: "Mona Sans", sans-serif;
-  overflow-x: hidden;
 
 }
 
 section {
-  width: 100dvw;
+  width: 100%;
+  max-width: 100%;
 }
 
 @theme {
@@ -89,7 +92,9 @@ section {
   }
 
   .hero-layout {
-    @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-center;
+    /* min-h instead of a hard height on mobile so the two domain buttons can
+       stack without the section clipping the "See My Works" button. */
+    @apply relative z-10 xl:mt-20 mt-32 md:h-dvh min-h-[80vh] pb-16 md:pb-0 flex xl:items-center items-start justify-center;
   }
 
   .hero-text {
@@ -102,12 +107,79 @@ section {
     }
   }
 
+  /* "move me" hint pointing at the knife. Fades out for good once the model
+     is grabbed — opacity is driven by React state, not GSAP, so nothing
+     fights it with an inline style. */
+  .hero-knife-hint {
+    @apply pointer-events-none absolute z-10 right-[4%] xl:right-[6%] top-[48%]
+      flex flex-col items-center gap-1 text-blue-50 opacity-0
+      transition-opacity duration-700 ease-out;
+  }
+
+  .hero-knife-hint.is-shown {
+    @apply opacity-100;
+  }
+
+  .hero-knife-hint-label {
+    @apply text-xs uppercase tracking-[0.25em];
+  }
+
+  .hero-knife-hint-arrow {
+    @apply size-10;
+    animation: heroHintNudge 1.9s ease-in-out infinite;
+  }
+
+  @keyframes heroHintNudge {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-7px);
+    }
+  }
+
+  /* Scroll cue: below the two domain buttons, roughly halfway down towards
+     the bottom of the hero. */
+  .hero-scroll {
+    @apply relative z-20 mx-auto mt-40 md:mt-60 flex flex-col items-center gap-2 w-fit
+      text-blue-50 transition-colors duration-300 hover:text-white-50;
+  }
+
+  .hero-scroll-mouse {
+    @apply relative flex justify-center w-6 h-10 pt-2 rounded-full border-2 border-current;
+  }
+
+  .hero-scroll-dot {
+    @apply block w-1 h-2 rounded-full bg-current;
+    animation: heroScrollDot 1.8s ease-in-out infinite;
+  }
+
+  .hero-scroll-label {
+    @apply text-[11px] uppercase tracking-[0.2em];
+  }
+
+  @keyframes heroScrollDot {
+    0%,
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(8px);
+      opacity: 0.25;
+    }
+  }
+
   .hero-badge {
     @apply bg-black-200 py-2 px-4 rounded-full w-fit text-sm md:text-base text-nowrap;
   }
 
   .hero-3d-layout {
-    @apply xl:w-[70%] w-full h-full min-h-[50vh] absolute xl:-top-20 top-24 xl:-right-20 right-0;
+    /* Desktop only (the figure isn't even rendered on smaller screens).
+       Fills the hero as background decor — sits under the buttons, which
+       carry their own z-index, but still takes drags anywhere else. */
+    @apply absolute inset-0 z-0 w-full h-full;
   }
 
   .navbar {
@@ -126,7 +198,29 @@ section {
     }
 
     .logo {
-      @apply text-white-50 text-xl md:text-2xl font-semibold transition-transform duration-300 hover:scale-105;
+      @apply text-white-50 text-base sm:text-xl md:text-2xl font-semibold whitespace-nowrap
+        transition-transform duration-300 hover:scale-105;
+    }
+
+    .nav-center {
+      @apply flex items-center gap-2 sm:gap-3 lg:gap-8;
+    }
+
+    /* GitHub / resume links. Icon-only on phones so the bar never crowds.
+       Transparent so the hero shows through — they only pick up a faint fill
+       on hover. */
+    .header-link {
+      @apply inline-flex items-center gap-2 rounded-lg border border-white/15
+        bg-transparent px-2.5 py-2 md:px-4 text-sm text-white-50 whitespace-nowrap
+        transition-all duration-300 hover:border-blue-50 hover:bg-white/5 hover:text-white;
+
+      svg {
+        @apply size-4 flex-none;
+      }
+    }
+
+    .header-link-label {
+      @apply hidden md:inline;
     }
 
     nav.desktop {
@@ -150,10 +244,11 @@ section {
     }
 
     .contact-btn {
-      @apply flex;
+      @apply flex flex-none;
 
       .inner {
-        @apply px-5 py-2 rounded-lg bg-white text-black group-hover:bg-black-50 transition-colors duration-300;
+        @apply px-3 md:px-5 py-2 rounded-lg bg-white text-black text-sm md:text-base whitespace-nowrap
+          group-hover:bg-black-50 transition-colors duration-300;
 
         span {
           @apply group-hover:text-white transition-colors duration-300;
@@ -316,7 +411,16 @@ section {
   }
 
   .timeline-logo {
-    @apply md:size-20 size-10 flex-none rounded-full flex justify-center items-center md:-translate-y-7 border border-black-50 bg-black-100;
+    @apply md:size-20 size-10 flex-none rounded-full flex justify-center items-center md:-translate-y-7 border border-black-50 bg-black-100 overflow-hidden;
+
+    img {
+      @apply size-full rounded-full object-contain;
+    }
+  }
+
+  /* Affiliation tag that sits next to the company badge, above the role title */
+  .exp-affiliation {
+    @apply inline-block mb-3 rounded-full border border-black-50 bg-black-100 px-3 py-1 text-xs md:text-sm text-white-50 tracking-wide;
   }
 
   .exp-card-wrapper {
@@ -364,6 +468,235 @@ section {
       img {
         @apply inline-block;
       }
+    }
+  }
+
+  /* ---------- Front page: Software / Hardware entry buttons ---------- */
+
+  .domain-switch {
+    @apply relative z-20 mx-auto flex flex-col sm:flex-row justify-center gap-5
+      w-full max-w-full md:max-w-4xl;
+  }
+
+  .domain-button {
+    @apply relative flex-1 min-w-0 flex items-center gap-4 md:gap-5 text-left
+      overflow-hidden cursor-pointer
+      rounded-2xl border border-black-50 bg-black-100 px-5 py-5 md:px-8 md:py-8
+      transition-all duration-300 ease-out
+      hover:-translate-y-1 hover:border-blue-50;
+
+    /* Dark chip + light line-art icon, so the icon actually reads. */
+    .domain-button-icon {
+      @apply flex-none flex justify-center items-center size-12 md:size-16 rounded-xl
+        border border-black-50 bg-black-200 transition-all duration-300
+        group-hover:scale-105 group-hover:border-blue-50;
+
+      img {
+        @apply size-6 md:size-8 object-contain;
+      }
+    }
+
+    .domain-button-body {
+      @apply flex flex-col min-w-0;
+    }
+
+    .domain-button-label {
+      @apply text-xl md:text-3xl font-semibold text-white leading-tight;
+    }
+
+    .domain-button-tagline {
+      @apply text-xs md:text-base text-blue-50 mt-1 md:mt-1.5 leading-snug break-words;
+    }
+
+    .domain-button-arrow {
+      @apply flex-none ml-auto size-5 md:size-6 text-white-50 opacity-50 -translate-x-1
+        transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0;
+
+      svg {
+        @apply size-5 md:size-6;
+      }
+    }
+  }
+
+  .domain-button:hover {
+    box-shadow: 0 18px 40px -24px rgba(217, 236, 255, 0.55);
+  }
+
+  .domain-button:active {
+    @apply translate-y-0 duration-100;
+  }
+
+  .domain-button:focus-visible {
+    @apply outline-none border-white-50 -translate-y-1;
+  }
+
+  .domain-button-sheen {
+    @apply pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500
+      group-hover:opacity-100;
+    background: radial-gradient(
+      120% 130% at 12% 0%,
+      rgba(217, 236, 255, 0.12) 0%,
+      rgba(217, 236, 255, 0) 62%
+    );
+  }
+
+  /* ---------- Domain pages (#/software and #/hardware) ---------- */
+
+  /* Everything on these pages lives inside .domain-page-shell, which is width
+     capped and centred, so nothing can run past the edge of the window. */
+  .domain-page {
+    @apply relative w-full max-w-full min-h-dvh bg-black overflow-x-hidden pb-10;
+    animation: domainFadeIn 0.4s ease-out both;
+  }
+
+  .domain-page-shell {
+    @apply w-full max-w-6xl mx-auto px-5 md:px-8 lg:px-10;
+  }
+
+  .domain-page-topbar {
+    @apply sticky top-0 z-50 w-full border-b border-black-50 bg-black/85 backdrop-blur;
+  }
+
+  .domain-page-topbar-inner {
+    @apply flex items-center justify-between gap-4 py-4;
+  }
+
+  .domain-page-name {
+    @apply text-white-50 text-sm md:text-base font-semibold truncate
+      transition-colors duration-300 hover:text-white;
+  }
+
+  .domain-back {
+    @apply inline-flex items-center gap-2 text-sm md:text-base font-medium text-white-50
+      transition-colors duration-300 hover:text-white;
+
+    svg {
+      @apply size-4 flex-none transition-transform duration-300 group-hover:-translate-x-1;
+    }
+  }
+
+  .domain-page-intro {
+    @apply pt-10 md:pt-16 pb-8 md:pb-12;
+    animation: domainRiseIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .domain-page-eyebrow {
+    @apply text-xs md:text-sm uppercase tracking-[0.2em] text-blue-50 break-words;
+  }
+
+  .domain-page-title {
+    @apply text-4xl md:text-6xl font-bold text-white mt-3 break-words;
+  }
+
+  .domain-page-description {
+    @apply text-sm md:text-base text-blue-50 mt-4 max-w-2xl leading-relaxed;
+  }
+
+  .domain-page-sections {
+    @apply flex flex-col gap-6 md:gap-8;
+  }
+
+  .domain-page-footer {
+    @apply mt-10 pt-8 border-t border-black-50;
+  }
+
+  .domain-section {
+    @apply w-full max-w-full rounded-2xl border border-black-50 bg-black-100
+      p-5 md:p-8 transition-colors duration-300 hover:border-blue-100;
+    animation: domainRiseIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .domain-section-head {
+    @apply flex flex-col md:flex-row md:items-center gap-5 md:gap-7 mb-6;
+  }
+
+  /* Fixed 16:9 frame so any artwork or photo drops in without shifting things. */
+  .domain-section-figure {
+    @apply flex-none w-full md:w-56 lg:w-64 aspect-video rounded-xl overflow-hidden
+      border border-black-50 bg-black-50;
+
+    img {
+      @apply w-full h-full object-cover;
+    }
+  }
+
+  .domain-section-heading {
+    @apply min-w-0;
+  }
+
+  .domain-section-title {
+    @apply text-xl md:text-2xl lg:text-3xl font-semibold text-white break-words;
+  }
+
+  .domain-section-blurb {
+    @apply text-sm md:text-base text-blue-50 mt-2 leading-relaxed;
+  }
+
+  .domain-project-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 w-full;
+  }
+
+  .domain-project-card {
+    @apply flex flex-col gap-3 min-w-0 rounded-xl border border-black-50 bg-black-50/40 p-5
+      transition-all duration-300 hover:-translate-y-1 hover:border-blue-50;
+  }
+
+  .domain-project-image-wrapper {
+    @apply w-full aspect-video rounded-lg overflow-hidden border border-black-50;
+  }
+
+  .domain-project-image {
+    @apply w-full h-full object-cover transition-transform duration-500 hover:scale-105;
+  }
+
+  .domain-project-title {
+    @apply text-lg font-semibold text-white break-words;
+  }
+
+  .domain-project-description {
+    @apply text-sm text-blue-50 leading-relaxed break-words;
+  }
+
+  .domain-tag-row {
+    @apply flex flex-wrap gap-2 list-none min-w-0;
+  }
+
+  .domain-tag {
+    @apply text-[11px] uppercase tracking-wide text-blue-50
+      border border-black-50 bg-black-100 rounded-full px-2.5 py-1;
+  }
+
+  .domain-project-link {
+    @apply mt-auto pt-2 inline-flex items-center gap-2 text-sm font-semibold
+      text-white-50 transition-colors duration-300 hover:text-white;
+
+    svg {
+      @apply size-4 transition-transform duration-300 group-hover:translate-x-1;
+    }
+  }
+
+  .domain-empty {
+    @apply rounded-xl border border-dashed border-black-50 bg-black-50/20
+      px-5 py-8 text-center text-sm text-blue-50;
+  }
+
+  @keyframes domainFadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes domainRiseIn {
+    from {
+      opacity: 0;
+      transform: translateY(24px) scale(0.985);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
     }
   }
 

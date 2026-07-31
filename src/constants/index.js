@@ -1,8 +1,11 @@
  const navLinks = [
-  { name: "Projects",       link: "#work" },
+  // "Projects" (#work) and "Skills" (#skills) pointed at the showcase and tech
+  // stack sections, which are gone — the projects live on the Software and
+  // Hardware pages now.
+  // { name: "Projects",   link: "#work" },
   { name: "Experience", link: "#experience" },
-  { name: "Skills",     link: "#skills" },
-  {/*{name: "Connect",    link: "#contact" },*/}
+  // { name: "Skills",     link: "#skills" },
+  // { name: "Connect",    link: "#contact" },
 ];
 
 const words = [
@@ -160,34 +163,77 @@ const techStackIcons = [
   },
 ];
 
+// Mirrors the four roles on Areg_Hovumyan_Resume.pdf, in the same order the
+// resume lists them. `title` is the role, `creditor` carries the organisation
+// and program, and `responsibilities` are the resume bullets.
 const expCards = [
   {
-    creditor: "A Northrop Grumman Collaboration Project (UGV Ground Control)",
-    review: "Areg built core UGV ground control software, delivering low-latency command and telemetry pipelines with strong reliability across communication, sensing, and control layers.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/ng.jpeg",
-    title: "Robotics Integration and Software Engineer",
-    date: "Jan 2026 - Present",
+    creditor: "L'SPACE — NASA's student acceleration program, Robotic Lunar Rover Mission (Remote)",
+    review: "Areg designs the lunar rover's Communication and Data Handling architecture and presents it to NASA engineers for possible mission consideration on the moon.",
+    imgPath: "/images/exp/lunar-rover.svg",
+    logoPath: "/images/exp/badge-nasa.svg",
+    affiliation: "Internship / Academy",
+    title: "Electrical / Embedded Systems Member",
+    date: "May 2026 - Present",
     responsibilities: [
-      "Developed a Python-based ground station enabling bidirectional wireless communication over XBee radios.",
-      "Engineered a custom ROS-to-GCS Python bridge integrated with xsens_ros_mti_driver, packing IMU/GPS telemetry into 72-byte binary structures.",
-      "Implemented a low-latency (15-50 ms) command pipeline with multi-threaded packet queuing to reliably encode controller state changes for motors, steering, and payloads.",
+      "Present the Communication and Data Handling to NASA engineers for a possible mission consideration on the moon.",
+      "Manage to stay within the schedule, cost, and mass limitations (under 250M, 170Kg, no sunlight for 14 days and more).",
+      "Implement Computer Vision on the rover to explore permanently shadowed craters on the moon.",
+      "Design the whole rover's Communication and Data Handling (C&DH) architecture by calculating the best-fitting battery, figuring out the communication protocols, and choosing the flight software by studying NASA's previous missions.",
+      "Establish (on concept) the communication between the Earth and the Moon, autonomous mission completion in case of redundancy, and learn F' to fit the mission under the mission needs.",
     ],
   },
   {
-    creditor: "A project sponsored by Lockheed Martin / SUAS International Drone Competition",
-    review: "Areg presented architecture proposals, risk mitigation, and schedule strategy during PDR reviews with Lockheed Martin engineers while leading software execution for the robotics team.",
+    creditor: "Autonomous Hexacopter (University Club) — Lockheed Martin sponsored project, Pomona, CA",
+    review: "Areg leads software for the hexacopter team, shipping the ROS2 nodes that run the whole mission and presenting mapping, computer vision, and GPU/CPU utilization results to Lockheed Martin engineers at PDR.",
     imgPath: "/images/exp1.png",
-    logoPath: "/images/lm.png",
-    title: "Machine Learning and Robotics Integration Team Lead",
-    date: "May 2025 - Present",
+    logoPath: "/images/exp/badge-lockheed-martin.svg",
+    affiliation: "Sponsored by Lockheed Martin",
+    title: "Software Engineering Team Lead",
+    date: "June 2025 - Present",
     responsibilities: [
-      "Presented architecture proposals, risk and schedule plans during Preliminary Design Review sessions with Lockheed Martin engineers.",
-      "Developed ROS2 Python nodes to stream live drone camera data over MAVLink/UDP and run object detection with lifecycle nodes and asyncio at 30 Hz throughput.",
-      "Engineered a YOLOv11 object recognition pipeline, improving detection speed by 300% via TensorRT FP16 and increasing accuracy by over 400% on Jetson Orin Nano.",
-      "Built a production-ready detection pipeline with ONNX engine caching and achieved 85% node-level test coverage using pytest and ROS2 launch testing.",
+      "Apply pair programming, test-first development, unit testing, create containers for a ROS2 environment with Docker for a team of 8 student-engineers to collaborate, and create CI/CD pipelines to ship features with fewer defects.",
+      "Currently integrating the hexacopter into Anduril's Lattice via a ROS2 bridge node that fuses MAVLink flight state with onboard perception, georeferencing pixel detections to WGS-84 ground coordinates and publishing them as C2 entities on the flight control loop.",
+      "Collaborate with the Electrical team to not overwhelm the processor with object detection and image capturing processes, and work with the Payload team to drop payloads mid-flight using servos.",
+      "Present mapping and Computer vision improvement, image processing achievement, and correct GPU/CPU utilization to Lockheed Martin engineers during the Preliminary Design Review (PDR).",
+      "Create ROS2 nodes that handle the whole mission, including object detection (0.99 mAP@0.5), area mapping, 4k image processing (under 0.7s each), and payload release over a target.",
     ],
   },
+  {
+    creditor: "Autonomous Ground Vehicle (University Club) — Northrop Grumman collaboration project, Pomona, CA",
+    review: "Areg presented the drone, rover, and ground station telemetry workflow to Northrop Grumman engineers, and worked with the firmware team on bare-metal C for the vehicle.",
+    imgPath: "/images/exp2.png",
+    logoPath: "/images/exp/badge-northrop-grumman.svg",
+    affiliation: "Northrop Grumman collaboration project",
+    title: "Embedded Systems Member",
+    date: "February 2026 - June 2026",
+    responsibilities: [
+      "Present telemetry connection between a drone, rover, and a ground station workflow to Northrop Grumman engineers during a Preliminary Design Review (PDR).",
+      "Implement Feature-driven development and the lean approach to release new code every week and meet all the requirements before any demonstrations or meetings.",
+      "Run an authorized hardware review of a DS2431-class authenticator with a Bus Pirate v4 and logic analyzer, confirming a family-code mismatch and identifying clone silicon.",
+      "Collaborate with the firmware team to develop bare-metal firmware for a pre-made microcontroller in C, directly manipulating registers (GPIO, timers, interrupts, etc.).",
+    ],
+  },
+  {
+    creditor: "Autonomous Vehicle Lab — University research lab, Pomona, CA",
+    review: "Areg builds an interceptor drone and a closed-loop steering controller in the university's autonomous vehicle lab, with CI/CD pipelines and unit tests keeping the team's system reliable.",
+    imgPath: "/images/exp/av-lab.svg",
+    logoPath: "/images/exp/av-lab-mark.svg",
+    title: "Software Engineer",
+    date: "April 2026 - Present",
+    responsibilities: [
+      "Create an interceptor drone, running object detection on a Jetson, establishing autonomous flight through a ready-made flight controller, and fitting under the budget of $2000.",
+      "Build a closed-loop stepper controller (CL57T) on a microcontroller with CAN telemetry over a TJA1051 transceiver to control a steering wheel through a computer, controller, or a joystick.",
+      "Engineer CI/CD pipeline in GitHub Actions for the team to catch regressions before merge, and create unit tests to improve system reliability.",
+      "Resolve priority-inversion bug by introducing mutex priority inheritance, restoring deterministic timing.",
+      "Utilize AI agents to interface an MPU IMU over I2C on a Nucleo to stream 9-DOF telemetry.",
+    ],
+  },
+];
+
+/* Earlier roles, kept for reference — these aren't on the current resume.
+   Drop any of them back into expCards above to show them again.
+
   {
     creditor: 'Liner team',
     review: "As a team lead, Areg brought creativity, technical expertise, leadership, and guidance to the team. He significantly improved our backend performance.",
@@ -216,7 +262,7 @@ const expCards = [
   },
   {
     creditor: "Minas K.",
-    review: "Areg built our website where customers could connect their crypto wallets and acquire their NFTs. He coded the smart contracts and worked directly with the artists to create 500 unique NFT characters. He deployed them on OpenSea and single-handedly led the team to success. He showed excellent leadership skills and proved that he is a team player who is able to meet all deadlines.",
+    review: "Areg built our website where customers could connect their crypto wallets and acquire their NFTs. He coded the smart contracts and worked directly with the artists to create 500 unique NFT characters. He deployed them on OpenSea and single-handedly led the team to success.",
     imgPath: "/images/cw.png",
     logoPath: "/images/crypto_warriors.png",
     title: "Full-Stack Developer, Smart Contract Developer",
@@ -227,7 +273,7 @@ const expCards = [
       "Integrated wallet functionality (MetaMask, WalletConnect) and managed user authentication using cryptographic signatures.",
     ],
   },
-];
+*/
 
 const expLogos = [
   {

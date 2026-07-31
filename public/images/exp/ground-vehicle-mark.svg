@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#d9ecff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Autonomous ground vehicle">
+  <path d="M11 32h26l-4-9h-8l-3-5H14z"/>
+  <g stroke="#839cb5">
+    <circle cx="17" cy="36" r="4"/>
+    <circle cx="31" cy="36" r="4"/>
+    <path d="M30 23v-6"/>
+  </g>
+  <g stroke="#a259ff" stroke-width="1.8">
+    <path d="M26 13a6 6 0 0 1 8 0M23 9a11 11 0 0 1 14 0"/>
+  </g>
+</svg>

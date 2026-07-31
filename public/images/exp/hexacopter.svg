@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 160" width="480" height="160" role="img" aria-label="Autonomous hexacopter — six-rotor airframe, georeferenced detection, and payload drop">
+  <!-- hexacopter, top down: hub, six arms, six rotors -->
+  <g fill="none" stroke="#d9ecff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M96 74L138 74M96 74L117 110M96 74L75 110M96 74L54 74M96 74L75 38M96 74L117 38"/>
+    <path d="M112 74l-8 14h-16l-8-14 8-14h16z"/>
+  </g>
+  <g fill="none" stroke="#839cb5" stroke-width="1.8">
+    <circle cx="138" cy="74" r="15"/>
+    <circle cx="117" cy="110" r="15"/>
+    <circle cx="75" cy="110" r="15"/>
+    <circle cx="54" cy="74" r="15"/>
+    <circle cx="75" cy="38" r="15"/>
+    <circle cx="117" cy="38" r="15"/>
+  </g>
+
+  <!-- gimbal camera under the hub -->
+  <g fill="none" stroke="#a259ff" stroke-width="2">
+    <circle cx="96" cy="74" r="6"/>
+  </g>
+
+  <!-- ROS2 link out to the mission payload -->
+  <g fill="none" stroke="#4cc0f0" stroke-width="2" stroke-linecap="round" opacity="0.85">
+    <path d="M172 74h22l8-12 10 24 9-12h23"/>
+  </g>
+  <g fill="#4cc0f0" opacity="0.9">
+    <circle cx="168" cy="74" r="3.5"/>
+    <circle cx="248" cy="74" r="3.5"/>
+  </g>
+
+  <!-- mapped area, gridded -->
+  <g fill="none" stroke="#839cb5" stroke-width="1.6" opacity="0.55">
+    <rect x="292" y="44" width="156" height="86" rx="6"/>
+    <path d="M344 44v86M396 44v86M292 73h156M292 102h156"/>
+  </g>
+
+  <!-- payload on the way down to the target -->
+  <g fill="none" stroke="#d9ecff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M338 32h24l-12 12z"/>
+    <path d="M344 44l3 6M356 44l-3 6"/>
+    <rect x="344" y="50" width="12" height="11" rx="2"/>
+  </g>
+  <g fill="none" stroke="#4cc0f0" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="4 6" opacity="0.85">
+    <path d="M350 63v18"/>
+  </g>
+
+  <!-- detection box locked on the target -->
+  <g fill="none" stroke="#a259ff" stroke-width="2" stroke-linecap="round">
+    <path d="M318 96v-14h14M382 96v-14h-14M318 106v14h14M382 106v14h-14"/>
+  </g>
+  <g fill="none" stroke="#d9ecff" stroke-width="2" stroke-linecap="round">
+    <circle cx="350" cy="101" r="7"/>
+    <path d="M350 88v-4M350 118v-4M333 101h-4M371 101h-4"/>
+  </g>
+</svg>
