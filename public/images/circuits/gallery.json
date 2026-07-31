@@ -1,0 +1,8 @@
+{
+  "order": ["stm32f103-schematic.svg", "stm32f103-pcb.svg"],
+  "exclude": ["stm32f103-board.png"],
+  "captions": {
+    "stm32f103-schematic.svg": "Schematic — STM32F103C8T6, USB front end, and the 3.3V rail",
+    "stm32f103-pcb.svg": "PCB layout — both copper layers, silkscreen, and board outline"
+  }
+}

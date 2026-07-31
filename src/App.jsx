@@ -2,7 +2,6 @@ import React, { Suspense, lazy, useEffect } from 'react';
 import Hero from './sections/Hero.jsx'
 import ShowcaseSection from './sections/ShowcaseSection.jsx'
 import NavBar from './components/NavBar.jsx'
-import LogoSection from './sections/LogoSection.jsx'
 import FeatureCard from './sections/FeatureCard.jsx'
 import ExperienceSection from './sections/ExperienceSection.jsx'
 // Code-split: TechStack pulls in three.js (one WebGL canvas per icon), so keep
@@ -43,7 +42,8 @@ const App = () => {
       {/* GitHub link moved up into the NavBar. */}
       {/* <ViewGithub/> */}
       <ExperienceSection />
-      <LogoSection />
+      {/* Scrolling tech-logo marquee removed. */}
+      {/* <LogoSection /> */}
       {/* <FeatureCard /> */}
       {/* "My Preferred Tech Stack" section removed.
       <Suspense fallback={null}>

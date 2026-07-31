@@ -1,0 +1,17 @@
+{
+  "order": [
+    "astra_objective.png",
+    "astra-flight-test.mov",
+    "astra-hexacopter-field.jpg",
+    "astra-avionics-bays.jpg",
+    "astra-drone.png"
+  ],
+  "exclude": ["astra-site-hero.webp"],
+  "captions": {
+    "astra_objective.png": "Mission objective — map the area, find the tent and person, deliver",
+    "astra-flight-test.mov": "Flight test",
+    "astra-hexacopter-field.jpg": "The hexacopter staged at the test site",
+    "astra-avionics-bays.jpg": "Avionics bays, GPS mast, and the payload deck before a flight",
+    "astra-drone.png": "Airframe CAD — carbon hexacopter with the gimbal and payload bay"
+  }
+}

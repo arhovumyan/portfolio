@@ -114,7 +114,7 @@ const techStackImgs = [
   },
   {
     name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
+    imgPath: "/images/logos/python.png",
   },
   {
     name: "Backend Developer",
@@ -169,9 +169,11 @@ const techStackIcons = [
 const expCards = [
   {
     creditor: "L'SPACE — NASA's student acceleration program, Robotic Lunar Rover Mission (Remote)",
-    review: "Areg designs the lunar rover's Communication and Data Handling architecture and presents it to NASA engineers for possible mission consideration on the moon.",
-    imgPath: "/images/exp/lunar-rover.svg",
-    logoPath: "/images/exp/badge-nasa.svg",
+    missionTitle: "Moon Rover Mission",
+    review:
+      "A rover enters a permanently shadowed lunar crater to search for water ice and collect scientific data. It sends the information to a satellite, which relays it back to Earth.",
+    imgPath: "/images/lspace/lspace_objective.png",
+    logoPath: "/images/nasa_circle.png",
     affiliation: "Internship / Academy",
     title: "Electrical / Embedded Systems Member",
     date: "May 2026 - Present",
@@ -185,9 +187,11 @@ const expCards = [
   },
   {
     creditor: "Autonomous Hexacopter (University Club) — Lockheed Martin sponsored project, Pomona, CA",
-    review: "Areg leads software for the hexacopter team, shipping the ROS2 nodes that run the whole mission and presenting mapping, computer vision, and GPU/CPU utilization results to Lockheed Martin engineers at PDR.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/exp/badge-lockheed-martin.svg",
+    missionTitle: "Drone Mapping and Delivery Mission",
+    review:
+      "A drone flies over an area, captures images, creates a map, and uses object detection to identify a tent and a person. It then drops a supply payload near the tent and delivers a water bottle to the person.",
+    imgPath: "/images/astra/astra_objective.png",
+    logoPath: "/images/lockheed_cirlce.png",
     affiliation: "Sponsored by Lockheed Martin",
     title: "Software Engineering Team Lead",
     date: "June 2025 - Present",
@@ -201,9 +205,11 @@ const expCards = [
   },
   {
     creditor: "Autonomous Ground Vehicle (University Club) — Northrop Grumman collaboration project, Pomona, CA",
-    review: "Areg presented the drone, rover, and ground station telemetry workflow to Northrop Grumman engineers, and worked with the firmware team on bare-metal C for the vehicle.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/exp/badge-northrop-grumman.svg",
+    missionTitle: "Rover and Drone Rescue Mission",
+    review:
+      "A drone surveys the area and sends location and obstacle information to a ground rover. The rover uses this intelligence to find a water bottle, pick it up, and deliver it to a person.",
+    imgPath: "/images/ng/ng_objective.png",
+    logoPath: "/images/ng_circle.jpeg",
     affiliation: "Northrop Grumman collaboration project",
     title: "Embedded Systems Member",
     date: "February 2026 - June 2026",
@@ -217,8 +223,8 @@ const expCards = [
   {
     creditor: "Autonomous Vehicle Lab — University research lab, Pomona, CA",
     review: "Areg builds an interceptor drone and a closed-loop steering controller in the university's autonomous vehicle lab, with CI/CD pipelines and unit tests keeping the team's system reliable.",
-    imgPath: "/images/exp/av-lab.svg",
-    logoPath: "/images/exp/av-lab-mark.svg",
+    imgPath: "/images/avl/avl_objective.png",
+    logoPath: "/images/avl.jpg",
     title: "Software Engineer",
     date: "April 2026 - Present",
     responsibilities: [

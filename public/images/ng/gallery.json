@@ -1,0 +1,24 @@
+{
+  "order": [
+    "ng_objective.png",
+    "ng-rover-demo.mov",
+    "ng-rover-pickup.mov",
+    "ng-rover-closeup.jpg",
+    "ng-rover-grass.jpg",
+    "ng-rover-payload.jpg",
+    "ng-team-rover.png",
+    "ng-team-airfield.jpg",
+    "ng-team-plaque.jpg"
+  ],
+  "captions": {
+    "ng_objective.png": "Mission objective — drone scouts, rover retrieves and delivers",
+    "ng-rover-demo.mov": "Rover driving the retrieval run",
+    "ng-rover-pickup.mov": "Arm picking up the bottle",
+    "ng-rover-closeup.jpg": "The rover at the airfield — LiDAR, comms, and the retrieval arm",
+    "ng-rover-grass.jpg": "Field testing on grass",
+    "ng-rover-payload.jpg": "Payload bay loaded up before a run",
+    "ng-team-rover.png": "Runway testing with the team",
+    "ng-team-airfield.jpg": "The NGCP team and the finished rover",
+    "ng-team-plaque.jpg": "Team plaque for the build"
+  }
+}

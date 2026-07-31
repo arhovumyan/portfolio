@@ -32,6 +32,11 @@ const GlowCard = ({ card, index, children }) => {
         ))}
       </div> */}
       <div className="mb-5">
+        {card.missionTitle && (
+          <h3 className="text-white text-xl font-semibold mb-3">
+            {card.missionTitle}
+          </h3>
+        )}
         <p className="text-white-50 text-lg">{card.review}</p>
         <p className="text-white-50 text-sm pt-2">{card.creditor}</p>
       </div>

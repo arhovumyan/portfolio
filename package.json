@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "export:circuits": "node scripts/export-circuits.mjs",
+    "make:thumbs": "powershell -ExecutionPolicy Bypass -File scripts/make-thumbs.ps1"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

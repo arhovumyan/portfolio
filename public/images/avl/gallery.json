@@ -1,0 +1,14 @@
+{
+  "order": [
+    "avl_objective.png",
+    "avl-steering-demo.mov",
+    "avl-carl-testing.jpg",
+    "avl-carl-electronics.jpg"
+  ],
+  "captions": {
+    "avl_objective.png": "Objective — onboard detection on the Jetson, and CI gating every merge",
+    "avl-steering-demo.mov": "Steering under closed-loop control",
+    "avl-carl-testing.jpg": "Bring-up outside the College of Engineering, ROS2 teleop running",
+    "avl-carl-electronics.jpg": "CARL's electronics deck — Jetson, drivers, fuse block, and CAN wiring"
+  }
+}

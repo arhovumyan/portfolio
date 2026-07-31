@@ -402,16 +402,32 @@ section {
     @apply md:w-40 w-32;
   }
 
- .timeline-wrapper {
-  @apply absolute top-0 xl:left-[35.5vw] md:left-10 left-5 h-full flex justify-center overflow-hidden z-1;
-}
+  /* The line has to run through the centre of the company badge, so its offset
+     is derived from where that badge actually lands rather than hand-tuned.
+     Stacked (below xl) the badge starts at the container's left edge, so its
+     centre is half its own width: 20px, then 40px once it grows at md.
+     Side by side (xl) the 2/6 and 4/6 columns overflow their 80px gap and
+     shrink proportionally, which puts the text column — and the badge with it —
+     at 100%/3 + 53.33px, so the badge centre is 100%/3 + 93.33px. The wrapper
+     is 2px wide, hence the extra -1px on every breakpoint. */
+  .timeline-wrapper {
+    @apply absolute top-0 left-[19px] md:left-[39px] xl:left-[calc(33.3333%+92.33px)]
+      h-full flex justify-center overflow-hidden z-1;
+  }
 
   .timeline {
     @apply absolute z-30 h-[110%] -top-10 w-14 md:w-28 bg-black;
   }
 
+  /* Experience holders carry mission renders and company badges that are pure
+     black to the edge, so the holder itself is black too — the near-black
+     bg-black-100 used elsewhere reads as a grey frame around those images. */
+  .timeline-card {
+    @apply bg-black;
+  }
+
   .timeline-logo {
-    @apply md:size-20 size-10 flex-none rounded-full flex justify-center items-center md:-translate-y-7 border border-black-50 bg-black-100 overflow-hidden;
+    @apply md:size-20 size-10 flex-none rounded-full flex justify-center items-center md:-translate-y-7 border border-black-50 bg-black overflow-hidden;
 
     img {
       @apply size-full rounded-full object-contain;
@@ -641,6 +657,12 @@ section {
       transition-all duration-300 hover:-translate-y-1 hover:border-blue-50;
   }
 
+  /* A card carrying a gallery takes the whole row, so each program reads as its
+     own little section instead of a squeezed third of one. */
+  .domain-project-card-wide {
+    @apply md:col-span-2 xl:col-span-3 hover:translate-y-0;
+  }
+
   .domain-project-image-wrapper {
     @apply w-full aspect-video rounded-lg overflow-hidden border border-black-50;
   }
@@ -666,13 +688,161 @@ section {
       border border-black-50 bg-black-100 rounded-full px-2.5 py-1;
   }
 
+  /* One row holding every link on a card, so a card with two buttons (schematic
+     + layout) keeps them together at the bottom instead of splitting the
+     leftover space between two mt-auto siblings. */
+  .domain-project-links {
+    @apply mt-auto pt-2 flex flex-wrap items-center gap-x-6 gap-y-2;
+  }
+
   .domain-project-link {
-    @apply mt-auto pt-2 inline-flex items-center gap-2 text-sm font-semibold
+    @apply inline-flex items-center gap-2 text-sm font-semibold
       text-white-50 transition-colors duration-300 hover:text-white;
 
     svg {
       @apply size-4 transition-transform duration-300 group-hover:translate-x-1;
     }
+  }
+
+  /* ---- Live-site banner (link preview of a project's own website) ---- */
+
+  .site-banner {
+    @apply relative flex items-end w-full overflow-hidden rounded-xl
+      border border-black-50 bg-black no-underline
+      aspect-[16/7] md:aspect-[21/8]
+      transition-all duration-300 hover:border-blue-50;
+  }
+
+  .site-banner-image {
+    @apply absolute inset-0 w-full h-full object-cover
+      transition-transform duration-700 group-hover:scale-105;
+  }
+
+  /* Dark wash so the site's own hero copy stays readable over the photo. */
+  .site-banner-scrim {
+    @apply absolute inset-0 bg-gradient-to-r from-black/95 via-black/70 to-black/30;
+  }
+
+  .site-banner-content {
+    @apply relative flex flex-col gap-1.5 p-5 md:p-7 max-w-2xl;
+  }
+
+  .site-banner-eyebrow {
+    @apply text-[10px] md:text-xs tracking-[0.2em] text-blue-50;
+  }
+
+  .site-banner-title {
+    @apply text-xl md:text-3xl font-bold tracking-wide text-white;
+  }
+
+  .site-banner-description {
+    @apply hidden sm:block text-xs md:text-sm text-white-50 leading-relaxed;
+  }
+
+  .site-banner-cta {
+    @apply mt-2 inline-flex items-center gap-2 w-fit rounded-full
+      border border-white/25 bg-black/60 px-3 py-1.5
+      text-xs md:text-sm font-semibold text-white backdrop-blur-sm
+      transition-colors duration-300 group-hover:border-blue-50;
+
+    svg {
+      @apply size-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5;
+    }
+  }
+
+  /* ---- Media gallery (photo / video strip on a project card) ---- */
+
+  .media-grid {
+    @apply grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-3 w-full mt-1;
+  }
+
+  .media-thumb {
+    @apply relative block w-full aspect-video overflow-hidden rounded-lg
+      border border-black-50 bg-black cursor-pointer
+      transition-all duration-300 hover:border-blue-50 hover:-translate-y-0.5;
+
+    img,
+    video {
+      @apply w-full h-full object-cover transition-transform duration-500;
+    }
+
+    &:hover img,
+    &:hover video {
+      @apply scale-105;
+    }
+  }
+
+  /* Small corner marker telling a still from a clip before you click it. */
+  .media-thumb-badge {
+    @apply absolute top-2 right-2 flex justify-center items-center size-7 rounded-full
+      bg-black/70 text-white-50 backdrop-blur-sm;
+
+    svg {
+      @apply size-4;
+    }
+  }
+
+  .media-thumb-caption {
+    @apply absolute inset-x-0 bottom-0 px-2.5 py-2 text-left text-[11px] leading-snug
+      text-white bg-gradient-to-t from-black/90 via-black/60 to-transparent
+      line-clamp-2;
+  }
+
+  /* ---- Media pop-up ---- */
+
+  .lightbox {
+    @apply fixed inset-0 z-[100] flex justify-center items-center bg-black/85 p-4;
+    animation: domainFadeIn 0.15s ease-out both;
+  }
+
+  /* Deliberately small and fixed: a 4000px phone photo and a 600px diagram open
+     at the same modest size, so nothing has to paint a screen-filling bitmap. */
+  .lightbox-panel {
+    @apply flex flex-col w-full max-w-[min(40rem,92vw)]
+      rounded-xl border border-black-50 bg-black-100 overflow-hidden;
+  }
+
+  .lightbox-toolbar {
+    @apply flex justify-end items-center gap-1 px-2 py-1.5 border-b border-black-50;
+
+    button,
+    a {
+      @apply flex justify-center items-center min-w-8 h-8 px-2.5 rounded-lg
+        text-xs font-semibold text-white-50 no-underline cursor-pointer
+        transition-colors duration-200 hover:bg-black-50 hover:text-white;
+    }
+  }
+
+  .lightbox-stage {
+    @apply flex justify-center items-center bg-black p-2;
+  }
+
+  .lightbox-image,
+  .lightbox-video {
+    @apply w-auto max-w-full max-h-[55vh] rounded-lg object-contain;
+  }
+
+  .lightbox-footer {
+    @apply flex flex-wrap justify-between items-center gap-2 px-3 py-2.5
+      border-t border-black-50;
+  }
+
+  .lightbox-caption {
+    @apply flex-1 min-w-0 text-xs md:text-sm text-white-50;
+  }
+
+  .lightbox-nav {
+    @apply flex items-center gap-1;
+
+    button {
+      @apply flex justify-center items-center size-7 rounded-lg
+        text-lg leading-none text-white-50 cursor-pointer
+        transition-colors duration-200 hover:bg-black-50 hover:text-white;
+    }
+  }
+
+  .lightbox-counter {
+    @apply px-1 text-xs text-blue-50 tabular-nums;
   }
 
   .domain-empty {
