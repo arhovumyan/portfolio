@@ -4,7 +4,28 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/sak.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tells the browser the page is dark before a single byte of CSS lands,
+         so a fresh tab paints its default canvas black instead of white. -->
+    <meta name="color-scheme" content="dark" />
     <title>Portfolio</title>
+    <!-- Inline, not imported: index.css only arrives once the JS bundle runs,
+         which is well after the first paint. This is the whole reason a new tab
+         used to flash white before the page showed up. -->
+    <style>
+      html {
+        color-scheme: dark;
+      }
+      html,
+      body,
+      #root {
+        background-color: #000;
+        color: #fff;
+      }
+      body,
+      #root {
+        min-height: 100dvh;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>

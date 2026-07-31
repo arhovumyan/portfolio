@@ -14,6 +14,9 @@ body {
   overflow-x: hidden;
   background-color: black;
   color: white;
+  /* Matches the inline style in index.html — keeps form controls, scrollbars,
+     and the browser's own canvas dark rather than defaulting to light. */
+  color-scheme: dark;
   scroll-behavior: smooth;
   font-family: "Mona Sans", sans-serif;
 

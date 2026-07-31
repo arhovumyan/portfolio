@@ -108,6 +108,14 @@ export const galleries = {
       "src": "/images/avl/avl-carl-electronics.jpg",
       "caption": "CARL's electronics deck — Jetson, drivers, fuse block, and CAN wiring",
       "thumb": "/images/avl/thumbs/avl-carl-electronics.jpg"
+    },
+    {
+      "src": "/images/avl/PXL_20260730_194525846.jpg",
+      "caption": "PXL 20260730 194525846"
+    },
+    {
+      "src": "/images/avl/PXL_20260730_194543273.jpg",
+      "caption": "PXL 20260730 194543273"
     }
   ],
   "circuits": [

@@ -46,6 +46,57 @@ const softwareDomain = {
   description:
     "Things I build with a keyboard — products people use, models that learn, and the data structures holding it all together.",
   sections: [
+    // Apps, Machine Learning, and Data Structures & Algorithms used to be three
+    // separate sections; they're one now, holding everything that was in them.
+    {
+      id: "software-ml-dsa",
+      title: "Software, Machine Learning, DSA, etc.",
+      image: "/images/sections/machine-learning.svg",
+      blurb:
+        "Apps, models and the pipelines feeding them, and the fundamentals underneath.",
+      projects: [
+        {
+          title: "NGCP — UGV Integration",
+          description:
+            "The 2025–26 integration repo for Northrop Grumman Collaboration Project's ground vehicle: C++ and Python running on a Jetson Orin Nano, with RTI Connext DDS carrying data between the vehicle's systems.",
+          tags: ["C++", "Python", "DDS", "Jetson Orin Nano"],
+          link: "https://github.com/ngcp-project/ugv-integration-2526",
+          linkLabel: "GitHub",
+        },
+        {
+          title: "Image Classification & Object Detection",
+          description:
+            "A notebook-driven classifier and detector trained on a custom shapes-and-colors dataset, taken from labelling through training runs to a written-up set of results.",
+          tags: ["Python", "Jupyter", "Computer Vision"],
+          link: "https://github.com/arhovumyan/image-classification-and-object-detection",
+          linkLabel: "GitHub",
+        },
+        {
+          title: "Object Detection Pipeline",
+          description:
+            "A YOLO detection pipeline packaged as an installable Python module, using SAHI sliced inference so small targets still get picked up in large aerial frames.",
+          tags: ["Python", "YOLO", "SAHI"],
+          link: "https://github.com/arhovumyan/Object-detection-pipeline",
+          linkLabel: "GitHub",
+        },
+        {
+          title: "Image Processing Pipeline",
+          description:
+            "Drives SIYI gimbal cameras through their SDK behind an internal server, so the aircraft's vision stack can request captures and pull frames on demand mid-flight.",
+          tags: ["SIYI SDK", "Camera control", "Vision"],
+          link: "https://github.com/arhovumyan/Image-processing-pipeline",
+          linkLabel: "GitHub",
+        },
+        {
+          title: "DSA Practice",
+          description:
+            "Data structures and algorithms worked through one implementation at a time — matrix problems, string manipulation, and tree structures, kept as a running reference.",
+          tags: ["Algorithms", "Data Structures"],
+          link: "https://github.com/arhovumyan/DSA",
+          linkLabel: "GitHub",
+        },
+      ],
+    },
     {
       id: "web-development",
       title: "Web Development",
@@ -92,49 +143,6 @@ const softwareDomain = {
             "A TypeScript and Node system that trades crypto on a DEX without babysitting — a sniper execution path, copy and mirror trading off tracked wallets, and PostgreSQL-backed session monitoring, shipped in Docker.",
           tags: ["TypeScript", "Node.js", "PostgreSQL", "Docker"],
           link: "https://github.com/arhovumyan/crypto-stuff",
-          linkLabel: "GitHub",
-        },
-      ],
-    },
-    // Apps, Machine Learning, and Data Structures & Algorithms used to be three
-    // separate sections; they're one now, holding everything that was in them.
-    {
-      id: "software-ml-dsa",
-      title: "Software, Machine Learning, DSA, etc.",
-      image: "/images/sections/machine-learning.svg",
-      blurb:
-        "Apps, models and the pipelines feeding them, and the fundamentals underneath.",
-      projects: [
-        {
-          title: "Image Classification & Object Detection",
-          description:
-            "A notebook-driven classifier and detector trained on a custom shapes-and-colors dataset, taken from labelling through training runs to a written-up set of results.",
-          tags: ["Python", "Jupyter", "Computer Vision"],
-          link: "https://github.com/arhovumyan/image-classification-and-object-detection",
-          linkLabel: "GitHub",
-        },
-        {
-          title: "Object Detection Pipeline",
-          description:
-            "A YOLO detection pipeline packaged as an installable Python module, using SAHI sliced inference so small targets still get picked up in large aerial frames.",
-          tags: ["Python", "YOLO", "SAHI"],
-          link: "https://github.com/arhovumyan/Object-detection-pipeline",
-          linkLabel: "GitHub",
-        },
-        {
-          title: "Image Processing Pipeline",
-          description:
-            "Drives SIYI gimbal cameras through their SDK behind an internal server, so the aircraft's vision stack can request captures and pull frames on demand mid-flight.",
-          tags: ["SIYI SDK", "Camera control", "Vision"],
-          link: "https://github.com/arhovumyan/Image-processing-pipeline",
-          linkLabel: "GitHub",
-        },
-        {
-          title: "DSA Practice",
-          description:
-            "Data structures and algorithms worked through one implementation at a time — matrix problems, string manipulation, and tree structures, kept as a running reference.",
-          tags: ["Algorithms", "Data Structures"],
-          link: "https://github.com/arhovumyan/DSA",
           linkLabel: "GitHub",
         },
       ],
